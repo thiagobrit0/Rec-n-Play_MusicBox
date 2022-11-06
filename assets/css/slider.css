@@ -78,8 +78,13 @@ html, body, main {
   }
   
   .buttons {
-    position: fixed;
+    position: relative;
+    text-align: center;
+    margin-top: 80px;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 10px;
+    padding: 10px 0;
+    
   }
+
+  

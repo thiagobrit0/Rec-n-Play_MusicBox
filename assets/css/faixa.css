@@ -1,0 +1,29 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+.cx {
+    padding: 2px;
+    color: white;
+    text-align: center;
+    text-shadow: 1px 1px 1px #000;
+    height: 5px;
+    width: auto;
+}
+
+.cx-1 {
+    background-color: #90FF3C;
+}
+
+.cx-2 {
+    background-color: #D2008B;
+}
+
+.cx-3 {
+    background-color: #DE5614;
+}
+
+.cx-4 {
+    background-color: #9900FE;
+}
