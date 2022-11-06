@@ -2,10 +2,14 @@
 
 
 * {
-    background-color: #000;
+    background-color: black !important;
     color: #fff;
 }
 
+.logo{
+line-height: 0;
+  max-height: 30px;
+}
 
 /* H's */
 h2{
@@ -45,6 +49,7 @@ h2{
     border-width: 8px;
 }
 
+/* ==================== Footer ===================== */
 
 .footer-text {
     padding-bottom: 25px;
@@ -57,3 +62,9 @@ h2{
     letter-spacing: 1px;
     font-family: var(--font-primary);
   }
+
+  .barra-footer-rec{
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
