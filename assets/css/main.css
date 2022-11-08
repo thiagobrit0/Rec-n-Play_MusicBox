@@ -7,21 +7,28 @@
 }
 
 .logo{
-line-height: 0;
-  max-height: 30px;
+    line-height: 0;
+    max-height: 30px;
 }
 
+
+
 /* H's */
-h2{
+ h2{
     font-family: montserrat,sans-serif;
 }
+
+.music-section-header {
+    margin-top: 5%;
+}
+
 .music-section h2{
     font-size: 32px;
     font-weight: 600;
     margin-bottom: 20px;
     padding-bottom: 20px;
     position: relative;
-    align-self: center;
+    color: #fff !important;
 }
 
 .music-section h2:after {
@@ -35,7 +42,7 @@ h2{
     right: 0;
     bottom: 0;
     margin: auto;
-  }
+  } 
 
 
 .barra-nav-rec{

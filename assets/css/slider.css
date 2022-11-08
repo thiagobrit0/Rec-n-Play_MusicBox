@@ -8,8 +8,7 @@ html, body, main {
   #carousel {
     position: relative;
     height: 400px;
-    top: 50%;
-    transform: translateY(-50%);
+    margin-top: 5%;
     overflow: hidden;
   }
   #carousel div {

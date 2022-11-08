@@ -78,7 +78,7 @@
     font-weight: 600;
     margin-bottom: 20px;
     padding-bottom: 20px;
-    position: relative;
+    position: fixed;
   }
   
   .section-header h2:after {
