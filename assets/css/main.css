@@ -1,0 +1,70 @@
+@import url("./faixa.css");
+
+
+* {
+    background-color: black !important;
+    color: #fff;
+}
+
+.logo{
+line-height: 0;
+  max-height: 30px;
+}
+
+/* H's */
+h2{
+    font-family: montserrat,sans-serif;
+}
+.music-section h2{
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    align-self: center;
+}
+
+.music-section h2:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: yellow;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+  }
+
+
+.barra-nav-rec{
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.music-card{
+    border-color: #340354;
+    border-width: 8px;
+}
+
+/* ==================== Footer ===================== */
+
+.footer-text {
+    padding-bottom: 25px;
+    position: relative;
+    display: inline-block;
+    transition: 0.3s;
+    border-bottom: 4px solid #9900FE;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-family: var(--font-primary);
+  }
+
+  .barra-footer-rec{
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
