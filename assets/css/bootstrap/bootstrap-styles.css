@@ -24,37 +24,12 @@
     --color-orange: #fddfdb;
   }
   
-  /* Smooth scroll behavior */
-  :root {
-    scroll-behavior: smooth;
-  }
+  
   
   /*--------------------------------------------------------------
   # General
   --------------------------------------------------------------*/
-  body {
-    font-family: var(--font-default);
-    color: var(--color-default);
-  }
-  
-  a {
-    color: var(--color-primary);
-    text-decoration: none;
-  }
-  
-  a:hover {
-    color: #0061b6;
-    text-decoration:underline;
-  }
-  
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-family: var(--font-primary);
-  }
+ 
   
   /*--------------------------------------------------------------
   # Sections & Section Header
@@ -78,7 +53,7 @@
     font-weight: 600;
     margin-bottom: 20px;
     padding-bottom: 20px;
-    position: fixed;
+    position: relative;
   }
   
   .section-header h2:after {
@@ -87,7 +62,7 @@
     display: block;
     width: 50px;
     height: 3px;
-    background: var(--color-primary);
+    background: #D2008B;
     left: 0;
     right: 0;
     bottom: 0;
@@ -159,13 +134,14 @@
     height: 40px;
     display: flex;
     align-items: center;
+    padding: 10px;
     justify-content: center;
     border: 1px solid #bbbbbb;
   }
   
   .team .member .social a:hover {
-    color: var(--color-primary);
-    border-color: var(--color-primary);
+    color: #D2008B;
+    border-color: #D2008B;
   }
   
   .team .member .social i {
@@ -173,119 +149,3 @@
     margin: 0 2px;
   }
   
-  
-  
-  /*--------------------------------------------------------------
-  # Footer
-  --------------------------------------------------------------*/
-  .footer {
-    font-size: 14px;
-    background-color: var(--color-primary);
-    color: white;
-  }
-  
-  .footer .footer-info .logo {
-    line-height: 0;
-    margin-bottom: 25px;
-  }
-  
-  .footer .footer-info .logo img {
-    max-height: 40px;
-    margin-right: 6px;
-  }
-  
-  .footer .footer-info .logo span {
-    font-size: 30px;
-    font-weight: 700;
-    letter-spacing: 1px;
-    color: #fff;
-    font-family: var(--font-primary);
-  }
-  
-  .footer .footer-info p {
-    font-size: 14px;
-    font-family: var(--font-primary);
-  }
-  
-  .footer .social-links a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    font-size: 16px;
-    color: rgba(255, 255, 255, 0.7);
-    margin-right: 10px;
-    transition: 0.3s;
-  }
-  
-  .footer .social-links a:hover {
-    color: #fff;
-    border-color: #fff;
-  }
-  
-  .footer h4 {
-    font-size: 16px;
-    font-weight: bold;
-    position: relative;
-    padding-bottom: 12px;
-  }
-  
-  .footer .footer-links {
-    margin-bottom: 30px;
-  }
-  
-  .footer .footer-links ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .footer .footer-links ul i {
-    padding-right: 2px;
-    color: rgba(0, 131, 116, 0.8);
-    font-size: 12px;
-    line-height: 0;
-  }
-  
-  .footer .footer-links ul li {
-    padding: 10px 0;
-    display: flex;
-    align-items: center;
-  }
-  
-  .footer .footer-links ul li:first-child {
-    padding-top: 0;
-  }
-  
-  .footer .footer-links ul a {
-    color: rgba(255, 255, 255, 0.7);
-    transition: 0.3s;
-    display: inline-block;
-    line-height: 1;
-  }
-  
-  .footer .footer-links ul a:hover {
-    color: #fff;
-  }
-  
-  .footer .footer-contact p {
-    line-height: 26px;
-  }
-  
-  .footer .copyright {
-    text-align: center;
-    padding-bottom: 50px;
-  }
-  
-  .footer .credits {
-    padding-top: 4px;
-    text-align: center;
-    font-size: 13px;
-  }
-  
-  .footer .credits a {
-    color: #fff;
-  }
