@@ -200,6 +200,7 @@ h2 {
 }
 
 .footer-text {
+  width: 500%;
   padding-bottom: 25px;
   position: relative;
   display: inline-block;

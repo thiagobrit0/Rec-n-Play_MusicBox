@@ -23,14 +23,14 @@
   #carousel div.hideLeft img {
     width: 200px;
   }
-  /* #carousel div.hideRight {
+   #carousel div.hideRight {
     left: 100%;
     opacity: 0;
     transform: translateY(50%) translateX(-50%);
   }
   #carousel div.hideRight img {
     width: 200px;
-  } */
+  } 
   #carousel div.prev {
     z-index: 5;
     left: 30%;
@@ -48,7 +48,7 @@
   #carousel div.prevLeftSecond img {
     width: 200px;
   }
-  /* #carousel div.selected {
+   #carousel div.selected {
     z-index: 10;
     left: 50%;
     transform: translateY(0px) translateX(-50%);
@@ -57,11 +57,11 @@
     z-index: 5;
     left: 70%;
     transform: translateY(50px) translateX(-50%);
-  } */
+  } 
   #carousel div.next img {
     width: 300px;
   }
-  /* #carousel div.nextRightSecond {
+   #carousel div.nextRightSecond {
     z-index: 4;
     left: 85%;
     transform: translateY(50%) translateX(-50%);
@@ -69,7 +69,7 @@
   }
   #carousel div.nextRightSecond img {
     width: 200px;
-  } */
+  } 
   
   .buttons {
     position: absolute;

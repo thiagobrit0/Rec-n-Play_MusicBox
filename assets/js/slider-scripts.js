@@ -1,5 +1,4 @@
 function moveToSelected(element) {
-
     if (element == "next") {
       var selected = $(".selected").next();
     } else if (element == "prev") {
@@ -7,7 +6,8 @@ function moveToSelected(element) {
     } else {
       var selected = element;
     }
-  
+
+
     var next = $(selected).next();
     var prev = $(selected).prev();
     var prevSecond = $(prev).prev();
@@ -54,6 +54,3 @@ function moveToSelected(element) {
     moveToSelected('next');
   });
 
-
-
-  
