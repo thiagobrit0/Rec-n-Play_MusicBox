@@ -1,0 +1,693 @@
+/* Resetando CSS da página */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* FIM Resetando CSS da página */
+
+/* Estilização do TOP */
+body {
+  height: 100vh;
+  background-image: linear-gradient(to bottom right, #e45834, #e27b30);
+}
+
+.top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 3%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.top h1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 80px;
+  display: flex;
+  align-items: center;
+
+  color: #ffffff;
+}
+
+/* FIM Estilização do TOP */
+
+/* Estilização do MID */
+
+.mid {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 3%;
+  margin-left: 5%;
+}
+
+/* Album Principal */
+.album_principal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  background-color: #fff;
+  border-radius: 15px;
+  margin-right: 5%;
+}
+
+.album_principal h3 {
+  margin-top: 5%;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #de5614;
+}
+
+.album_principal img {
+  margin-top: 5%;
+  height: 20vw;
+}
+
+.separador_principal {
+  margin-top: 5%;
+  width: 80%;
+  height: 5px;
+  background: #e7c6ae;
+  border-radius: 6px;
+}
+
+.album_principal p {
+  margin-top: 4%;
+  margin-bottom: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #000000;
+}
+
+/* FIM Album Principal */
+
+#lista_musica li {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 15px;
+  width: 30vw;
+  height: 50px;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+#lista_musica h3,
+#lista_musica h5 {
+  margin-left: 5%;
+}
+
+#lista_musica h3 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+
+  color: #de5614;
+}
+
+#lista_musica h5 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+
+  color: #3c3c3c;
+}
+
+.album_musicas ol li:hover {
+  cursor: pointer;
+}
+
+/* FIM Estilização do MID */
+
+/* Estilização do BOT */
+
+.bot {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 3%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 5%;
+}
+
+.opcoes {
+  display: flex;
+  flex-direction: row;
+}
+
+.playlist {
+  display: flex;
+  flex-direction: row;
+  background-color: #fff;
+  align-items: center;
+  border-radius: 15px;
+  width: 288px;
+  height: 65px;
+  justify-content: space-between;
+}
+
+.playlist img {
+  margin-right: 15px;
+}
+
+.current-track-name {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+
+  color: #de5614;
+  margin-left: 15px;
+}
+
+.current-track-artist {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+
+  color: #3c3c3c;
+  margin-left: 15px;
+}
+
+.creditos {
+  display: flex;
+  flex-direction: row;
+  background-color: #fff;
+  border-radius: 15px;
+  width: 136px;
+  height: 65px;
+  align-items: center;
+  justify-content: space-around;
+  margin-left: 5%;
+}
+
+.creditos h3 {
+  margin-left: 10px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #000000;
+}
+
+.creditos img {
+  margin-right: 10px;
+}
+
+/* FIM Estilização do BOT */
+
+/* PLAYER DE MUSICA */
+
+.player {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 5%;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 15px;
+  width: 422px;
+}
+
+.details {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.track-art {
+  margin: 10%;
+  height: 250px;
+  width: 250px;
+  border-radius: 15px;
+  background-size: cover;
+  background-position: center;
+}
+
+.track-name {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 26px;
+  display: flex;
+  align-items: center;
+  color: #de5614;
+  margin-bottom: 2%;
+}
+
+.track-artist {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  color: #3c3c3c;
+
+  margin-bottom: 5%;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.active {
+  color: #de5614;
+}
+
+.repeat-track,
+.random-track,
+.playpause-track,
+.prev-track,
+.next-track {
+  padding: 7%;
+  opacity: 0.8;
+  transition: opacity 0.2s;
+  color: #3c3c3c;
+}
+
+.repeat-track:hover,
+.random-track:hover,
+.playpause-track:hover,
+.prev-track:hover,
+.next-track:hover {
+  opacity: 1;
+  color: #de5614;
+  transition: color 0.2s;
+}
+
+.slider_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.seek_slider,
+.volume_slider {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 5px;
+  background: #3c3c3c;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+  border-radius: 10px;
+}
+
+.seek_slider::-webkit-slider-thumb,
+.volume_slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  background: white;
+  border: 3px solid #de5614;
+  cursor: pointer;
+  border-radius: 100%;
+}
+
+.seek_slider:hover,
+.volume_slider:hover {
+  opacity: 1;
+}
+
+.seek_slider {
+  width: 150px;
+}
+
+.volume_slider {
+  width: 150px;
+}
+
+.current-time,
+.total-duration {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+
+  color: #3c3c3c;
+  padding: 10px;
+}
+
+i.fa-volume-down,
+i.fa-volume-up {
+  padding: 10px;
+}
+
+i,
+i.fa-play-circle,
+i.fa-pause-circle,
+i.fa-step-forward,
+i.fa-step-backward {
+  cursor: pointer;
+}
+
+.randomActive {
+  color: #de5614;
+}
+
+/* FIM do Player de música */
+
+/* Para telas menores que 760px de largura */
+
+@media (max-width: 760px) {
+  .top h1 {
+    font-size: 30px;
+  }
+
+  .bot {
+    flex-direction: column-reverse;
+  }
+
+  .playlist h3 {
+    font-size: 16px;
+  }
+
+  .playlist h5 {
+    font-size: 10px;
+  }
+
+  .playlist {
+    width: 210px;
+    height: 50px;
+  }
+
+  .playlist img {
+    margin-left: 10px;
+  }
+
+  .creditos {
+    width: 100px;
+    height: 50px;
+  }
+
+  .opcoes {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .mid {
+    flex-direction: column-reverse;
+  }
+
+  #lista_musica li {
+    width: 90vw;
+    height: 50px;
+    margin-right: 5%;
+  }
+
+  #lista_musica h3 {
+    font-size: 16px;
+  }
+
+  #lista_musica h5 {
+    font-size: 10px;
+  }
+
+  .album_principal {
+    margin-left: 0;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 95%;
+  }
+
+  .album_principal {
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .album_principal h3 {
+    margin-top: 0;
+    margin-left: 5%;
+    font-size: 20px;
+  }
+
+  .album_principal p {
+    display: none;
+  }
+
+  .album_principal img {
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-bottom: 5%;
+  }
+
+  .separador_principal {
+    display: none;
+  }
+
+  .top img {
+    height: 35px;
+  }
+
+  .logo_senac {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    height: 40px;
+  }
+
+  .playlist img {
+    margin-left: 10px;
+    height: 20px;
+  }
+
+  .creditos img {
+    margin-right: 5px;
+    height: 20px;
+  }
+
+  html {
+    height: 100%;
+  }
+
+  .wrapper {
+    width: 90vw;
+    margin-bottom: 15px;
+  }
+
+  .track-art {
+    margin: 15px;
+    height: 100px;
+    width: 100px;
+  }
+
+  .track-name {
+    font-size: 18px;
+  }
+
+  .track-artist {
+    font-size: 12px;
+  }
+
+  .seek_slider {
+    width: 150px;
+  }
+
+  #volume {
+    display: none;
+  }
+
+  .fa-5x {
+    font-size: 2em !important;
+  }
+
+  .fa-2x {
+    font-size: 1.25em !important;
+  }
+
+  .current-time,
+  .total-duration {
+    font-size: 12px;
+  }
+
+  .current-track-name {
+    font-size: 16px;
+  }
+
+  .current-track-artist {
+    font-size: 10px;
+  }
+}
