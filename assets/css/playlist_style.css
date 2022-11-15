@@ -291,15 +291,16 @@ ol {
   background-color: #fff !important;
   border-radius: 15px;
   width: 30vw;
-  height: 50px;
+  min-height: 50px;
   justify-content: center;
   margin-bottom: 15px;
 }
 
 #lista_musica h3,
 #lista_musica h5 {
-  margin-left: 5%;
+  margin-left: 30px;
 }
+
 
 #lista_musica h3 {
   font-family: "Poppins";
@@ -335,10 +336,10 @@ ol {
   align-items: center;
 }
 
-.track-artist-lista {
+.track-album{
   font-size: 26px;
   font-weight: 400;
-  color: #FF00B8;
+  color: #b54cfc;
   margin-bottom: 10px;
 }
 
@@ -446,6 +447,7 @@ ol {
   flex-direction: column;
   align-items: center;
   background-color: #fff !important;
+  margin-top: 49px;
   border-radius: 15px;
   width: 550px;
 }

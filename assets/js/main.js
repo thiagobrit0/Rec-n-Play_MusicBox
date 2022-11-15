@@ -2,7 +2,8 @@ let track_art = document.querySelector(".track-art");
 let track_name = document.querySelector(".track-name");
 let track_artist = document.querySelector(".track-artist");
 let track_text = document.querySelector(".track-text");
-let track_artist_lista = document.querySelector(".track-artist-lista");
+let track_album = document.querySelector(".track-album");
+
 
 let playpause_btn = document.querySelector(".playpause-track");
 let next_btn = document.querySelector(".next-track");
@@ -24,25 +25,28 @@ const music_list = [
   {
     id: 0,
     img: "/assets/img/albums/caos_lama.png",
-    name: "Corpo De Lama",
+    name: "Monólogo ao Pé do Ouvido",
     artist: "Chico Science & Nação Zumbi",
-    music: "/assets/music/1_Corpo De Lama.mp3",
+    album: "Da Lama ao Caos",
+    music: "/assets/music/DaLamaaoCaos/01. Monólogo ao Pé do Ouvido.mp3",
     description: "teste",
   },
   {
     id: 1,
     img: "/assets/img/albums/caos_lama.png",
-    name: "Maracatu Atômico",
+    name: "Banditismo por Uma Questão de Classe",
     artist: "Chico Science & Nação Zumbi",
-    music: "/assets/music/2_Maracatu Atômico.mp3",
-    description: "teste1",
+    album: "Da Lama ao Caos",
+    music: "/assets/music/DaLamaaoCaos/02. Banditismo por Uma Questão de Classe.mp3",
+    description: "teste",
   },
   {
     id: 2,
     img: "/assets/img/albums/caos_lama.png",
-    name: "A Praieira",
+    name: "Rios, Pontes e Overdrives",
     artist: "Chico Science & Nação Zumbi",
-    music: "/assets/music/3_A Praieira.mp3",
+    album: "Da Lama ao Caos",
+    music: "/assets/music/DaLamaaoCaos/03. Rios, Pontes & Overdrives.mp3",
     description: "teste1",
   },
   {
@@ -50,87 +54,98 @@ const music_list = [
     img: "/assets/img/albums/caos_lama.png",
     name: "A Cidade",
     artist: "Chico Science & Nação Zumbi",
-    music: "/assets/music/4_A Cidade.mp3",
+    album: "Da Lama ao Caos",
+    music: "/assets/music/DaLamaaoCaos/04. A Cidade - Boa Noite do Velho Faceta (Amor de Criança).mp3",
     description: "teste1",
   },
   {
     id: 4,
     img: "/assets/img/albums/caos_lama.png",
-    name: "Manguetown",
+    name: "A Praieira",
     artist: "Chico Science & Nação Zumbi",
-    music: "/assets/music/5_Manguetown.mp3",
+    album: "Da Lama ao Caos",
+    music: "/assets/music/DaLamaaoCaos/05. A Praieira.mp3",
     description: "teste1",
   },
   {
     id: 5,
     img: "/assets/img/albums/caos_lama.png",
-    name: "Da Lama ao Caos",
+    name: "Samba Makossa",
     artist: "Chico Science & Nação Zumbi",
-    music: "/assets/music/6_Da Lama ao Caos.mp3",
+    album: "Da Lama ao Caos",
+    music: "/assets/music/DaLamaaoCaos/06. Samba Makossa.mp3",
     description: "teste1",
   },
   {
     id: 6,
     img: "/assets/img/albums/caos_lama.png",
-    name: "Rios, Pontes e Overdrives",
+    name: "Da Lama ao Caos",
     artist: "Chico Science & Nação Zumbi",
-    music: "/assets/music/7_Rios, Pontes e Overdrives.mp3",
+    album: "Da Lama ao Caos",
+    music: "/assets/music/DaLamaaoCaos/07. Da Lama Ao Caos.mp3",
     description: "teste1",
   },
   {
     id: 7,
     img: "/assets/img/albums/caos_lama.png",
-    name: "Macô",
+    name: "Maracatu de Tiro Certeiro",
     artist: "Chico Science & Nação Zumbi",
-    music: "/assets/music/8_Macô.mp3",
+    album: "Da Lama ao Caos",
+    music: "/assets/music/DaLamaaoCaos/08. Maracatu de Tiro Certeiro.mp3",
     description: "teste1",
   },
   {
     id: 8,
     img: "/assets/img/albums/caos_lama.png",
-    name: "Samba Makossa",
+    name: "Salustiano Song",
     artist: "Chico Science & Nação Zumbi",
-    music: "/assets/music/10_Samba Makossa.mp3",
+    album: "Da Lama ao Caos",
+    music: "/assets/music/DaLamaaoCaos/09. Salustiano Song.mp3",
     description: "teste1",
   },
   {
     id: 9,
     img: "/assets/img/albums/caos_lama.png",
-    name: "Samba Makossa",
+    name: "Antene-se",
     artist: "Chico Science & Nação Zumbi",
-    music: "/assets/music/10_Samba Makossa.mp3",
+    album: "Da Lama ao Caos",
+    music: "/assets/music/DaLamaaoCaos/10. Antene-Se.mp3",
     description: "teste1",
   },
   {
     id: 10,
     img: "/assets/img/albums/caos_lama.png",
-    name: "Samba Makossa",
+    name: "Risoflora",
     artist: "Chico Science & Nação Zumbi",
-    music: "/assets/music/10_Samba Makossa.mp3",
+    album: "Da Lama ao Caos",
+    music: "/assets/music/DaLamaaoCaos/11. Risoflora.mp3",
     description: "teste1",
   },
   {
     id: 11,
     img: "/assets/img/albums/caos_lama.png",
-    name: "Samba Makossa",
+    name: "Lixo do Mangue",
     artist: "Chico Science & Nação Zumbi",
-    music: "/assets/music/10_Samba Makossa.mp3",
+    album: "Da Lama ao Caos",
+    music: "/assets/music/DaLamaaoCaos/12. Lixo do Mangue.mp3",
     description: "teste1",
   },
   {
     id: 12,
     img: "/assets/img/albums/caos_lama.png",
-    name: "Samba Makossa",
+    name: "Computadores Fazem Arte",
     artist: "Chico Science & Nação Zumbi",
-    music: "/assets/music/10_Samba Makossa.mp3",
+    album: "Da Lama ao Caos",
+    music: "/assets/music/DaLamaaoCaos/13. Computadores Fazem Arte.mp3",
     description: "teste1",
   },
   {
     id: 13,
     img: "/assets/img/albums/caos_lama.png",
-    name: "Samba Makossa",
+    name: "Coco Dub (Bônus)",
     artist: "Chico Science & Nação Zumbi",
-    music: "/assets/music/10_Samba Makossa.mp3",
+    album: "Da Lama ao Caos",
+    music: "/assets/music/DaLamaaoCaos/14. Côco Dub (Afrociberdelia).mp3",
     description: "teste1",
   },
 
@@ -151,7 +166,7 @@ function loadTrack(track_index) {
   track_text.textContent = music_list[track_index].description;
 
 
-  track_artist_lista.textContent = music_list[track_index].artist;
+  track_album.textContent = music_list[track_index].album;
 
   updateTimer = setInterval(setUpdate, 1000);
 
