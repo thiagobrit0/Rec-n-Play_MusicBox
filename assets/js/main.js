@@ -21,9 +21,12 @@ let isPlaying = false;
 let isRandom = false;
 let updateTimer;
 
-const music_list = [
-  {
+const urlParams = new URLSearchParams(window.location.search);
+const id = urlParams.get("id");
+
+const music_list = [{
     id: 0,
+    idalbum: 4,
     img: "/assets/img/albums/caos_lama.png",
     name: "Monólogo ao Pé do Ouvido",
     artist: "Chico Science & Nação Zumbi",
@@ -33,6 +36,7 @@ const music_list = [
   },
   {
     id: 1,
+    idalbum: 4,
     img: "/assets/img/albums/caos_lama.png",
     name: "Banditismo por Uma Questão de Classe",
     artist: "Chico Science & Nação Zumbi",
@@ -42,6 +46,7 @@ const music_list = [
   },
   {
     id: 2,
+    idalbum: 4,
     img: "/assets/img/albums/caos_lama.png",
     name: "Rios, Pontes e Overdrives",
     artist: "Chico Science & Nação Zumbi",
@@ -51,6 +56,7 @@ const music_list = [
   },
   {
     id: 3,
+    idalbum: 4,
     img: "/assets/img/albums/caos_lama.png",
     name: "A Cidade",
     artist: "Chico Science & Nação Zumbi",
@@ -60,6 +66,7 @@ const music_list = [
   },
   {
     id: 4,
+    idalbum: 4,
     img: "/assets/img/albums/caos_lama.png",
     name: "A Praieira",
     artist: "Chico Science & Nação Zumbi",
@@ -69,6 +76,7 @@ const music_list = [
   },
   {
     id: 5,
+    idalbum: 4,
     img: "/assets/img/albums/caos_lama.png",
     name: "Samba Makossa",
     artist: "Chico Science & Nação Zumbi",
@@ -78,6 +86,7 @@ const music_list = [
   },
   {
     id: 6,
+    idalbum: 4,
     img: "/assets/img/albums/caos_lama.png",
     name: "Da Lama ao Caos",
     artist: "Chico Science & Nação Zumbi",
@@ -87,6 +96,7 @@ const music_list = [
   },
   {
     id: 7,
+    idalbum: 4,
     img: "/assets/img/albums/caos_lama.png",
     name: "Maracatu de Tiro Certeiro",
     artist: "Chico Science & Nação Zumbi",
@@ -96,6 +106,7 @@ const music_list = [
   },
   {
     id: 8,
+    idalbum: 4,
     img: "/assets/img/albums/caos_lama.png",
     name: "Salustiano Song",
     artist: "Chico Science & Nação Zumbi",
@@ -105,6 +116,7 @@ const music_list = [
   },
   {
     id: 9,
+    idalbum: 4,
     img: "/assets/img/albums/caos_lama.png",
     name: "Antene-se",
     artist: "Chico Science & Nação Zumbi",
@@ -114,6 +126,7 @@ const music_list = [
   },
   {
     id: 10,
+    idalbum: 4,
     img: "/assets/img/albums/caos_lama.png",
     name: "Risoflora",
     artist: "Chico Science & Nação Zumbi",
@@ -123,6 +136,7 @@ const music_list = [
   },
   {
     id: 11,
+    idalbum: 4,
     img: "/assets/img/albums/caos_lama.png",
     name: "Lixo do Mangue",
     artist: "Chico Science & Nação Zumbi",
@@ -132,6 +146,7 @@ const music_list = [
   },
   {
     id: 12,
+    idalbum: 4,
     img: "/assets/img/albums/caos_lama.png",
     name: "Computadores Fazem Arte",
     artist: "Chico Science & Nação Zumbi",
@@ -141,6 +156,7 @@ const music_list = [
   },
   {
     id: 13,
+    idalbum: 4,
     img: "/assets/img/albums/caos_lama.png",
     name: "Coco Dub (Bônus)",
     artist: "Chico Science & Nação Zumbi",
@@ -149,8 +165,799 @@ const music_list = [
     description: "teste1",
   },
 
+  {
+    id: 14,
+    idalbum: 0,
+    img: "/assets/img/albums/csnzChico.jpg",
+    name: "Malungo",
+    artist: "Chico Science, Nação Zumbi, Jorge Ben Jor, Fred 04, Marcelo D2, Falcão",
+    album: "C.S.N.Z",
+    music: "/assets/music/CSNZ/01 Malungo.mp3",
+    description: "teste1",
+  },
+
+  {
+    id: 15,
+    idalbum: 0,
+    img: "/assets/img/albums/csnzChico.jpg",
+    name: "Nos Quintais do Mundo",
+    artist: "Chico Science & Nação Zumbi",
+    album: "C.S.N.Z",
+    music: "/assets/music/CSNZ/02 Nos Quintais Do Mundo.mp3",
+    description: "teste1",
+  },
+  {
+    id: 16,
+    idalbum: 0,
+    img: "/assets/img/albums/csnzChico.jpg",
+    name: "Protótipo Sambadélico de Mensagem Digital",
+    artist: "Chico Science & Nação Zumbi",
+    album: "C.S.N.Z",
+    music: "/assets/music/CSNZ/03 Protótipo Sambadélico de Mensagem Digital.mp3",
+    description: "teste1",
+  },
+  {
+    id: 17,
+    idalbum: 0,
+    img: "/assets/img/albums/csnzChico.jpg",
+    name: "Dubismo",
+    artist: "Chico Science & Nação Zumbi",
+    album: "C.S.N.Z",
+    music: "/assets/music/CSNZ/04 Dubismo.mp3",
+    description: "teste1",
+  },
+  {
+    id: 18,
+    idalbum: 0,
+    img: "/assets/img/albums/csnzChico.jpg",
+    name: "Interlude Cien-Zia",
+    artist: "Chico Science & Nação Zumbi",
+    album: "C.S.N.Z",
+    music: "/assets/music/CSNZ/05 Interlude Cien-Zia.mp3",
+    description: "teste1",
+  },
+  {
+    id: 19,
+    idalbum: 0,
+    img: "/assets/img/albums/csnzChico.jpg",
+    name: "Quilombo Groove",
+    artist: "Chico Science & Nação Zumbi",
+    album: "C.S.N.Z",
+    music: "/assets/music/CSNZ/06 Quilombo Groove (Ao Vivo).mp3",
+    description: "teste1",
+  },
+  {
+    id: 20,
+    idalbum: 0,
+    img: "/assets/img/albums/csnzChico.jpg",
+    name: "Um Satélite Na Cabeça",
+    artist: "Chico Science & Nação Zumbi",
+    album: "C.S.N.Z",
+    music: "/assets/music/CSNZ/07 Um Satélite Na Cabeça [Ao Vivo].mp3",
+    description: "teste1",
+  },
+  {
+    id: 21,
+    idalbum: 0,
+    img: "/assets/img/albums/csnzChico.jpg",
+    name: "Lixo Do Mangue",
+    artist: "Chico Science & Nação Zumbi",
+    album: "C.S.N.Z",
+    music: "/assets/music/CSNZ/08 Pout-Pourri-Lixo Do Mangue-Enquanto O Mundo Explode [Ao Vivo].mp3",
+    description: "teste1",
+  },
+  {
+    id: 22,
+    idalbum: 0,
+    img: "/assets/img/albums/csnzChico.jpg",
+    name: "Sobremesa",
+    artist: "Chico Science & Nação Zumbi",
+    album: "C.S.N.Z",
+    music: "/assets/music/CSNZ/09 Sobremesa [Ao Vivo].mp3",
+    description: "teste1",
+  },
+  {
+    id: 23,
+    idalbum: 0,
+    img: "/assets/img/albums/csnzChico.jpg",
+    name: "Salustiano Song",
+    artist: "Chico Science & Nação Zumbi",
+    album: "C.S.N.Z",
+    music: "/assets/music/CSNZ/10 Salustiano Song [Ao Vivo].mp3",
+    description: "teste1",
+  },
+
+  {
+    id: 24,
+    idalbum: 1,
+    img: "/assets/img/albums/nadadenovo.jpg",
+    name: "cabidela",
+    artist: "Mombojó",
+    album: "Nadadenovo",
+    music: "/assets/music/Nadadenovo/01 Cabidela.mp3",
+    description: "teste1",
+  },
+  {
+    id: 25,
+    idalbum: 1,
+    img: "/assets/img/albums/nadadenovo.jpg",
+    name: "deixe-se acreditar",
+    artist: "Mombojó",
+    album: "Nadadenovo",
+    music: "/assets/music/Nadadenovo/02 Deixe-se Acreditar.mp3",
+    description: "teste1",
+  },
+  {
+    id: 26,
+    idalbum: 1,
+    img: "/assets/img/albums/nadadenovo.jpg",
+    name: "nem parece",
+    artist: "Mombojó",
+    album: "Nadadenovo",
+    music: "/assets/music/Nadadenovo/03 Nem Parece.mp3",
+    description: "teste1",
+  },
+  {
+    id: 27,
+    idalbum: 1,
+    img: "/assets/img/albums/nadadenovo.jpg",
+    name: "discurso burocrático",
+    artist: "Mombojó",
+    album: "Nadadenovo",
+    music: "/assets/music/Nadadenovo/04 Discurso Burocrático.mp3",
+    description: "teste1",
+  },
+  {
+    id: 28,
+    idalbum: 1,
+    img: "/assets/img/albums/nadadenovo.jpg",
+    name: "a missa",
+    artist: "Mombojó",
+    album: "Nadadenovo",
+    music: "/assets/music/Nadadenovo/05 A Missa.mp3",
+    description: "teste1",
+  },
+  {
+    id: 29,
+    idalbum: 1,
+    img: "/assets/img/albums/nadadenovo.jpg",
+    name: "absorva",
+    artist: "Mombojó",
+    album: "Nadadenovo",
+    music: "/assets/music/Nadadenovo/06 Absorva.mp3",
+    description: "teste1",
+  },
+  {
+    id: 30,
+    idalbum: 1,
+    img: "/assets/img/albums/nadadenovo.jpg",
+    name: "o céu, o sol e o mar",
+    artist: "Mombojó",
+    album: "Nadadenovo",
+    music: "/assets/music/Nadadenovo/07 O Céu, O Sol E O Mar.mp3",
+    description: "teste1",
+  },
+  {
+    id: 31,
+    idalbum: 1,
+    img: "/assets/img/albums/nadadenovo.jpg",
+    name: "adelaide",
+    artist: "Mombojó",
+    album: "Nadadenovo",
+    music: "/assets/music/Nadadenovo/08 Adelaide.mp3",
+    description: "teste1",
+  },
+  {
+    id: 32,
+    idalbum: 1,
+    img: "/assets/img/albums/nadadenovo.jpg",
+    name: "duas cores",
+    artist: "Mombojó",
+    album: "Nadadenovo",
+    music: "/assets/music/Nadadenovo/09 Duas Cores.mp3",
+    description: "teste1",
+  },
+  {
+    id: 33,
+    idalbum: 1,
+    img: "/assets/img/albums/nadadenovo.jpg",
+    name: "estático",
+    artist: "Mombojó",
+    album: "Nadadenovo",
+    music: "/assets/music/Nadadenovo/10 Estático.mp3",
+    description: "teste1",
+  },
+  {
+    id: 34,
+    idalbum: 1,
+    img: "/assets/img/albums/nadadenovo.jpg",
+    name: "merda",
+    artist: "Mombojó",
+    album: "Nadadenovo",
+    music: "/assets/music/Nadadenovo/11 Merda.mp3",
+    description: "teste1",
+  },
+  {
+    id: 35,
+    idalbum: 1,
+    img: "/assets/img/albums/nadadenovo.jpg",
+    name: "splash shine",
+    artist: "Mombojó",
+    album: "Nadadenovo",
+    music: "/assets/music/Nadadenovo/12 Splash Shine.mp3",
+    description: "teste1",
+  },
+  {
+    id: 36,
+    idalbum: 1,
+    img: "/assets/img/albums/nadadenovo.jpg",
+    name: "faaca",
+    artist: "Mombojó",
+    album: "Nadadenovo",
+    music: "/assets/music/Nadadenovo/13 Faaca.mp3",
+    description: "teste1",
+  },
+  {
+    id: 37,
+    idalbum: 1,
+    img: "/assets/img/albums/nadadenovo.jpg",
+    name: "baú",
+    artist: "Mombojó",
+    album: "Nadadenovo",
+    music: "/assets/music/Nadadenovo/14 Baú.mp3",
+    description: "teste1",
+  },
+  {
+    id: 38,
+    idalbum: 1,
+    img: "/assets/img/albums/nadadenovo.jpg",
+    name: "container",
+    artist: "Mombojó",
+    album: "Nadadenovo",
+    music: "/assets/music/Nadadenovo/15 Container.mp3",
+    description: "teste1",
+  },
+
+  {
+    id: 39,
+    idalbum: 2,
+    img: "/assets/img/albums/radiolanz.png",
+    name: "Refazenda",
+    artist: "Nação Zumbi",
+    album: "Radiola NZ, Vol. 1",
+    music: "/assets/music/RadiolaNZ/01. Refazenda.mp3",
+    description: "teste1",
+  },
+
+  {
+    id: 40,
+    idalbum: 2,
+    img: "/assets/img/albums/radiolanz.png",
+    name: "Balanço",
+    artist: "Nação Zumbi",
+    album: "Radiola NZ, Vol. 1",
+    music: "/assets/music/RadiolaNZ/01. Refazenda.mp3",
+    description: "teste1",
+  },
+  {
+    id: 41,
+    idalbum: 2,
+    img: "/assets/img/albums/radiolanz.png",
+    name: "Amor",
+    artist: "Nação Zumbi & Ney Matogrosso",
+    album: "Radiola NZ, Vol. 1",
+    music: "/assets/music/RadiolaNZ/03. Amor.mp3",
+    description: "teste1",
+  },
+  {
+    id: 42,
+    idalbum: 2,
+    img: "/assets/img/albums/radiolanz.png",
+    name: "Não Há Dinheiro Que Pague",
+    artist: "Nação Zumbi",
+    album: "Radiola NZ, Vol. 1",
+    music: "/assets/music/RadiolaNZ/04. Não Há Dinheiro Que Pague.mp3",
+    description: "teste1",
+  },
+  {
+    id: 43,
+    idalbum: 2,
+    img: "/assets/img/albums/radiolanz.png",
+    name: "Do Nothing",
+    artist: "Nação Zumbi",
+    album: "Radiola NZ, Vol. 1",
+    music: "/assets/music/RadiolaNZ/05. Do Nothing.mp3",
+    description: "teste1",
+  },
+  {
+    id: 44,
+    idalbum: 2,
+    img: "/assets/img/albums/radiolanz.png",
+    name: "Dois Animais Na Selva Suja Da Rua",
+    artist: "Nação Zumbi",
+    album: "Radiola NZ, Vol. 1",
+    music: "/assets/music/RadiolaNZ/06. Dois Animais Na Selva Suja Da Rua.mp3",
+    description: "teste1",
+  },
+  {
+    id: 45,
+    idalbum: 2,
+    img: "/assets/img/albums/radiolanz.png",
+    name: "Tomorrow Never Knows",
+    artist: "Nação Zumbi",
+    album: "Radiola NZ, Vol. 1",
+    music: "/assets/music/RadiolaNZ/07. Tomorrow Never Knows.mp3",
+    description: "teste1",
+  },
+  {
+    id: 46,
+    idalbum: 2,
+    img: "/assets/img/albums/radiolanz.png",
+    name: "Sexual Healing",
+    artist: "Nação Zumbi",
+    album: "Radiola NZ, Vol. 1",
+    music: "/assets/music/RadiolaNZ/08. Sexual Healing.mp3",
+    description: "teste1",
+  },
+  {
+    id: 47,
+    idalbum: 2,
+    img: "/assets/img/albums/radiolanz.png",
+    name: "09. Ashes To Ashes",
+    artist: "Nação Zumbi",
+    album: "Radiola NZ, Vol. 1",
+    music: "/assets/music/RadiolaNZ/09. Ashes To Ashes.mp3",
+    description: "teste1",
+  },
+  {
+    id: 48,
+    idalbum: 3,
+    img: "/assets/img/albums/futuranz.jpg",
+    name: "Hoje, Amanhã E Depois",
+    artist: "Nação Zumbi",
+    album: "Futura",
+    music: "/assets/music/Futura/01. Refazenda.mp3",
+    description: "teste1",
+  },
+
+  {
+    id: 49,
+    idalbum: 3,
+    img: "/assets/img/albums/futuranz.jpg",
+    name: "Na Hora De Ir",
+    artist: "Nação Zumbi",
+    album: "Futura",
+    music: "/assets/music/Futura/02 - Na Hora De Ir.mp3",
+    description: "teste1",
+  },
+  {
+    id: 50,
+    idalbum: 3,
+    img: "/assets/img/albums/futuranz.jpg",
+    name: "Memorando",
+    artist: "Nação Zumbi",
+    album: "Futura",
+    music: "/assets/music/Futura/03 - Memorando.mp3",
+    description: "teste1",
+  },
+  {
+    id: 51,
+    idalbum: 3,
+    img: "/assets/img/albums/futuranz.jpg",
+    name: "A Ilha",
+    artist: "Nação Zumbi",
+    album: "Futura",
+    music: "/assets/music/Futura/04 - A Ilha.mp3",
+    description: "teste1",
+  },
+  {
+    id: 52,
+    idalbum: 3,
+    img: "/assets/img/albums/futuranz.jpg",
+    name: "05 - Respirando",
+    artist: "Nação Zumbi",
+    album: "Futura",
+    music: "/assets/music/Futura/05 - Respirando.mp3",
+    description: "teste1",
+  },
+  {
+    id: 53,
+    idalbum: 3,
+    img: "/assets/img/albums/futuranz.jpg",
+    name: "06 - Voyager",
+    artist: "Nação Zumbi",
+    album: "Futura",
+    music: "/assets/music/Futura/06 - Voyager.mp3",
+    description: "teste1",
+  },
+  {
+    id: 53,
+    idalbum: 3,
+    img: "/assets/img/albums/futuranz.jpg",
+    name: "O Expresso Da Elétrica Avenida",
+    artist: "Nação Zumbi",
+    album: "Futura",
+    music: "/assets/music/Futura/07 - O Expresso Da Elétrica Avenida.mp3",
+    description: "teste1",
+  },
+  {
+    id: 54,
+    idalbum: 3,
+    img: "/assets/img/albums/futuranz.jpg",
+    name: "Nebulosa",
+    artist: "Nação Zumbi",
+    album: "Futura",
+    music: "/assets/music/Futura/08 - Nebulosa.mp3",
+    description: "teste1",
+  },
+  {
+    id: 55,
+    idalbum: 3,
+    img: "/assets/img/albums/futuranz.jpg",
+    name: "Sem Preço",
+    artist: "Nação Zumbi",
+    album: "Futura",
+    music: "/assets/music/Futura/09 - Sem Preço.mp3",
+    description: "teste1",
+  },
+
+  {
+    id: 56,
+    idalbum: 3,
+    img: "/assets/img/albums/futuranz.jpg",
+    name: "Vai Buscar",
+    artist: "Nação Zumbi",
+    album: "Futura",
+    music: "/assets/music/Futura/10 - Vai Buscar.mp3",
+    description: "teste1",
+  },
+
+  {
+    id: 57,
+    idalbum: 3,
+    img: "/assets/img/albums/futuranz.jpg",
+    name: "Pode Acreditar",
+    artist: "Nação Zumbi",
+    album: "Futura",
+    music: "/assets/music/Futura/11 - Pode Acreditar.mp3",
+    description: "teste1",
+  },
+  {
+    id: 58,
+    idalbum: 3,
+    img: "/assets/img/albums/futuranz.jpg",
+    name: "Futura",
+    artist: "Nação Zumbi",
+    album: "Futura",
+    music: "/assets/music/Futura/12 - Futura.mp3",
+    description: "teste1",
+  },
+
+  {
+    id: 59,
+    idalbum: 5,
+    img: "/assets/img/albums/sambaesquema.png",
+    name: "Manguebit",
+    artist: "Mundo Livre S/A",
+    album: "Samba esquema noise",
+    music: "/assets/music/Futura/01. Manguebit.mp3",
+    description: "teste1",
+  },
+
+  {
+    id: 60,
+    idalbum: 5,
+    img: "/assets/img/albums/sambaesquema.png",
+    name: "A Bola do Jogo",
+    artist: "Mundo Livre S/A",
+    album: "Samba esquema noise",
+    music: "/assets/music/Futura/02. A Bola do Jogo.mp3",
+    description: "teste1",
+  },
+  {
+    id: 61,
+    idalbum: 5,
+    img: "/assets/img/albums/sambaesquema.png",
+    name: "Livre Iniciativa",
+    artist: "Mundo Livre S/A",
+    album: "Samba esquema noise",
+    music: "/assets/music/Futura/03. Livre Iniciativa.mp3",
+    description: "teste1",
+  },
+  {
+    id: 62,
+    idalbum: 5,
+    img: "/assets/img/albums/sambaesquema.png",
+    name: "Terra Escura",
+    artist: "Mundo Livre S/A",
+    album: "Samba esquema noise",
+    music: "/assets/music/Futura/04. Terra Escura.mp3",
+    description: "teste1",
+  },
+  {
+    id: 63,
+    idalbum: 5,
+    img: "/assets/img/albums/sambaesquema.png",
+    name: "Saldo de Aratú",
+    artist: "Mundo Livre S/A",
+    album: "Samba esquema noise",
+    music: "/assets/music/Futura/05. Saldo de Aratú.mp3",
+    description: "teste1",
+  },
+  {
+    id: 64,
+    idalbum: 5,
+    img: "/assets/img/albums/sambaesquema.png",
+    name: "Uma Mulher com W... Maiúsculo",
+    artist: "Mundo Livre S/A",
+    album: "Samba esquema noise",
+    music: "/assets/music/Futura/06. Uma Mulher com W... Maiúsculo.mp3",
+    description: "teste1",
+  },
+  {
+    id: 65,
+    idalbum: 5,
+    img: "/assets/img/albums/sambaesquema.png",
+    name: "Homero, o Junkie",
+    artist: "Mundo Livre S/A",
+    album: "Samba esquema noise",
+    music: "/assets/music/Futura/07. Homero, o Junkie.mp3",
+    description: "teste1",
+  },
+  {
+    id: 66,
+    idalbum: 5,
+    img: "/assets/img/albums/sambaesquema.png",
+    name: "Rios (Smart Dugs), Pontes & Overdrives",
+    artist: "Mundo Livre S/A",
+    album: "Samba esquema noise",
+    music: "/assets/music/Futura/08. Rios (Smart Dugs), Pontes & Overdrives.mp3",
+    description: "teste1",
+  },
+  {
+    id: 67,
+    idalbum: 5,
+    img: "/assets/img/albums/sambaesquema.png",
+    name: "Musa da Ilha Grande",
+    artist: "Mundo Livre S/A",
+    album: "Samba esquema noise",
+    music: "/assets/music/Futura/09. Musa da Ilha Grande.mp3",
+    description: "teste1",
+  },
+  {
+    id: 68,
+    idalbum: 5,
+    img: "/assets/img/albums/sambaesquema.png",
+    name: "Cidade Estuário",
+    artist: "Mundo Livre S/A",
+    album: "Samba esquema noise",
+    music: "/assets/music/Futura/10. Cidade Estuário.mp3",
+    description: "teste1",
+  },
+  {
+    id: 69,
+    idalbum: 5,
+    img: "/assets/img/albums/sambaesquema.png",
+    name: "O Rapaz do B... Preto",
+    artist: "Mundo Livre S/A",
+    album: "Samba esquema noise",
+    music: "/assets/music/Futura/O Rapaz do B... Preto.mp3",
+    description: "teste1",
+  },
+  {
+    id: 70,
+    idalbum: 5,
+    img: "/assets/img/albums/sambaesquema.png",
+    name: "Sob o Calçamento (se Espumar é Gente)",
+    artist: "Mundo Livre S/A",
+    album: "Samba esquema noise",
+    music: "/assets/music/Futura/12. Sob o Calçamento (se Espumar é Gente).mp3",
+    description: "teste1",
+  },
+  {
+    id: 71,
+    idalbum: 6,
+    img: "/assets/img/albums/sambaesquema.png",
+    name: "Mateus Enter",
+    artist: "Chico Science & Nação Zumbi",
+    album: "Afrociberdelia",
+    music: "/assets/music/Afrociberdelia/01 - Mateus Enter.mp3",
+    description: "teste1",
+  },
+  {
+    id: 72,
+    idalbum: 6,
+    img: "/assets/img/albums/sambaesquema.png",
+    name: "O Cidadão do Mundo",
+    artist: "Chico Science & Nação Zumbi",
+    album: "Afrociberdelia",
+    music: "/assets/music/Afrociberdelia/02 - O Cidadão do Mundo.mp3",
+    description: "teste1",
+  },
+  {
+    id: 73,
+    idalbum: 6,
+    img: "/assets/img/albums/sambaesquema.png",
+    name: "Etnia",
+    artist: "Chico Science & Nação Zumbi",
+    album: "Afrociberdelia",
+    music: "/assets/music/Afrociberdelia/03 - Etnia.mp3",
+    description: "teste1",
+  },
+  {
+    id: 74,
+    idalbum: 6,
+    img: "/assets/img/albums/sambaesquema.png",
+    name: "Quilombo Groove",
+    artist: "Chico Science & Nação Zumbi",
+    album: "Afrociberdelia",
+    music: "/assets/music/Afrociberdelia/04 - Quilombo Groove.mp3",
+    description: "teste1",
+  },
+  {
+    id: 75,
+    idalbum: 6,
+    img: "/assets/img/albums/sambaesquema.png",
+    name: "Macô",
+    artist: "Chico Science, Nação Zumbi, Gilberto Gil e Marcelo D2",
+    album: "Afrociberdelia",
+    music: "/assets/music/Afrociberdelia/05 - Macô.mp3",
+    description: "teste1",
+  },
+  {
+    id: 76,
+    idalbum: 6,
+    img: "/assets/img/albums/sambaesquema.png",
+    name: "Um Passeio no Mundo Livre",
+    artist: "Chico Science & Nação Zumbi",
+    album: "Afrociberdelia",
+    music: "/assets/music/Afrociberdelia/06 - Um Passeio no Mundo Livre.mp3",
+    description: "teste1",
+  },
+  {
+    id: 77,
+    idalbum: 6,
+    img: "/assets/img/albums/sambaesquema.png",
+    name: "Samba do Lado",
+    artist: "Chico Science, Nação Zumbi, Fred 04",
+    album: "Afrociberdelia",
+    music: "/assets/music/Afrociberdelia/07 - Samba do Lado.mp3",
+    description: "teste1",
+  },
+  {
+    id: 78,
+    idalbum: 6,
+    img: "/assets/img/albums/sambaesquema.png",
+    name: "Maracatu Atômico",
+    artist: "Chico Science & Nação Zumbi",
+    album: "Afrociberdelia",
+    music: "/assets/music/Afrociberdelia/08 - Maracatu Atômico.mp3",
+    description: "teste1",
+  },
+  {
+    id: 79,
+    idalbum: 6,
+    img: "/assets/img/albums/sambaesquema.png",
+    name: "O Encontro De Isaac Asimov Com Santos Dumont No Céu",
+    artist: "Chico Science & Nação Zumbi",
+    album: "Afrociberdelia",
+    music: "/assets/music/Afrociberdelia/09 - O Encontro De Isaac Asimov Com Santos Dumont No Céu.mp3",
+    description: "teste1",
+  },
+  {
+    id: 80,
+    idalbum: 6,
+    img: "/assets/img/albums/sambaesquema.png",
+    name: "Corpo de Lama",
+    artist: "Chico Science & Nação Zumbi",
+    album: "Afrociberdelia",
+    music: "/assets/music/Afrociberdelia/10 - Corpo de Lama.mp3",
+    description: "teste1",
+  },
+  {
+    id: 81,
+    idalbum: 6,
+    img: "/assets/img/albums/sambaesquema.png",
+    name: "Sobremesa",
+    artist: "Chico Science & Nação Zumbi",
+    album: "Afrociberdelia",
+    music: "/assets/music/Afrociberdelia/11 - Sobremesa.mp3",
+    description: "teste1",
+  },
+  {
+    id: 82,
+    idalbum: 6,
+    img: "/assets/img/albums/sambaesquema.png",
+    name: "Manguetown",
+    artist: "Chico Science & Nação Zumbi",
+    album: "Afrociberdelia",
+    music: "/assets/music/Afrociberdelia/12 - Manguetown.mp3",
+    description: "teste1",
+  },
+  {
+    id: 83,
+    idalbum: 6,
+    img: "/assets/img/albums/sambaesquema.png",
+    name: "Um Satélite na Cabeca",
+    artist: "Chico Science & Nação Zumbi",
+    album: "Afrociberdelia",
+    music: "/assets/music/Afrociberdelia/13 - Um Satélite na Cabeca.mp3",
+    description: "teste1",
+  },
+  {
+    id: 84,
+    idalbum: 6,
+    img: "/assets/img/albums/sambaesquema.png",
+    name: "Baião Ambiental",
+    artist: "Chico Science & Nação Zumbi",
+    album: "Afrociberdelia",
+    music: "/assets/music/Afrociberdelia/14 - Baião Ambiental.mp3",
+    description: "teste1",
+  },
+  {
+    id: 85,
+    idalbum: 6,
+    img: "/assets/img/albums/sambaesquema.png",
+    name: "Sangue de Bairro",
+    artist: "Chico Science & Nação Zumbi",
+    album: "Afrociberdelia",
+    music: "/assets/music/Afrociberdelia/15 - Sangue de Bairro.mp3",
+    description: "teste1",
+  },
+  {
+    id: 86,
+    idalbum: 6,
+    img: "/assets/img/albums/sambaesquema.png",
+    name: "Enquanto o Mundo Explode",
+    artist: "Chico Science & Nação Zumbi",
+    album: "Afrociberdelia",
+    music: "/assets/music/Afrociberdelia/16 - Enquanto o Mundo Explode.mp3",
+    description: "teste1",
+  },
+  {
+    id: 87,
+    idalbum: 6,
+    img: "/assets/img/albums/sambaesquema.png",
+    name: "Interlude Zumbi",
+    artist: "Chico Science & Nação Zumbi",
+    album: "Afrociberdelia",
+    music: "/assets/music/Afrociberdelia/17 - Interlude Zumbi.mp3",
+    description: "teste1",
+  },
+  {
+    id: 88,
+    idalbum: 6,
+    img: "/assets/img/albums/sambaesquema.png",
+    name: "Criança de Domingo",
+    artist: "Chico Science & Nação Zumbi",
+    album: "Afrociberdelia",
+    music: "/assets/music/Afrociberdelia/18 - Criança de Domingo.mp3",
+    description: "teste1",
+  },
+  {
+    id: 89,
+    idalbum: 6,
+    img: "/assets/img/albums/sambaesquema.png",
+    name: "Amor de Muito",
+    artist: "Chico Science & Nação Zumbi",
+    album: "Afrociberdelia",
+    music: "/assets/music/Afrociberdelia/19 - Amor de Muito.mp3",
+    description: "teste1",
+  },
+  {
+    id: 90,
+    idalbum: 6,
+    img: "/assets/img/albums/sambaesquema.png",
+    name: "20 - Samidarish",
+    artist: "Chico Science & Nação Zumbi",
+    album: "Afrociberdelia",
+    music: "/assets/music/Afrociberdelia/20 - Samidarish.mp3",
+    description: "teste1",
+  },
+
 ];
 
+pegaTrackIndex();
 loadTrack(track_index);
 
 function loadTrack(track_index) {
@@ -178,37 +985,45 @@ function reset() {
   total_duration.textContent = "00:00";
   seek_slider.value = 0;
 }
+
 function randomTrack() {
   isRandom ? pauseRandom() : playRandom();
 }
+
 function playRandom() {
   isRandom = true;
   randomIcon.classList.add("randomActive");
 }
+
 function pauseRandom() {
   isRandom = false;
   randomIcon.classList.remove("randomActive");
 }
+
 function repeatTrack() {
   let current_index = track_index;
   loadTrack(current_index);
   playTrack();
 }
+
 function playpauseTrack() {
   isPlaying ? pauseTrack() : playTrack();
 }
+
 function playTrack() {
   curr_track.play();
   isPlaying = true;
   track_art.classList.add("rotate");
   playpause_btn.innerHTML = '<i class="fa fa-pause-circle fa-5x"></i>';
 }
+
 function pauseTrack() {
   curr_track.pause();
   isPlaying = false;
   track_art.classList.remove("rotate");
   playpause_btn.innerHTML = '<i class="fa fa-play-circle fa-5x"></i>';
 }
+
 function nextTrack() {
   if (track_index < music_list.length - 1 && isRandom === false) {
     track_index += 1;
@@ -221,6 +1036,7 @@ function nextTrack() {
   loadTrack(track_index);
   playTrack();
 }
+
 function prevTrack() {
   if (track_index > 0) {
     track_index -= 1;
@@ -230,13 +1046,16 @@ function prevTrack() {
   loadTrack(track_index);
   playTrack();
 }
+
 function seekTo() {
   let seekto = curr_track.duration * (seek_slider.value / 100);
   curr_track.currentTime = seekto;
 }
+
 function setVolume() {
   curr_track.volume = volume_slider.value / 100;
 }
+
 function setUpdate() {
   let seekPosition = 0;
   if (!isNaN(curr_track.duration)) {
@@ -276,24 +1095,37 @@ function listarMusicas() {
   const listaOrdenada = document.getElementById("lista_musica");
 
   music_list.forEach((music_list) => {
-    const li = document.createElement("li");
+    if (music_list.idalbum == id) {
+      const li = document.createElement("li");
 
-    li.addEventListener("click", function handleClick() {
-      track_index = music_list.id;
-      loadTrack(track_index);
-      if (isPlaying) {
-        playTrack();
-      }
-    });
+      li.addEventListener("click", function handleClick() {
+        track_index = music_list.id;
+        loadTrack(track_index);
+        if (isPlaying) {
+          playTrack();
+        }
+      });
 
-    const nome = document.createElement("h3");
-    nome.innerHTML = music_list.name;
-    li.appendChild(nome);
+      const nome = document.createElement("h3");
+      nome.innerHTML = music_list.name;
+      li.appendChild(nome);
 
-    const album = document.createElement("h5");
-    album.innerHTML = music_list.artist;
-    li.appendChild(album);
+      const album = document.createElement("h5");
+      album.innerHTML = music_list.artist;
+      li.appendChild(album);
 
-    listaOrdenada.appendChild(li);
+      listaOrdenada.appendChild(li);
+    }
   });
+}
+
+function pegaTrackIndex() {
+  let count_index = 0;
+  music_list.forEach((music_list) => {
+    if (music_list.idalbum == id) {
+      track_index = music_list.id;
+      count_index++;
+    }
+  });
+  track_index = track_index - count_index + 1;
 }
