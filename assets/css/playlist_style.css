@@ -130,36 +130,84 @@ table {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 /* FIM Resetando CSS da página */
 
+/* Estilização Header */
+
+@import url("./faixa.css");
+
+:root {
+  --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-primary: "Montserrat", sans-serif;
+  --font-secondary: "Poppins", sans-serif;
+}
+
+nav, body {
+  background-color: #000000 !important;
+}
+
+.logo {
+  line-height: 0;
+  max-height: 30px;
+}
+
+/* H's */
+h2 {
+  font-family: montserrat, sans-serif;
+}
+
+.section-header {
+  margin-top: 5%;
+}
+
+.section-header h2 {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  color: #fff !important;
+}
+
+.section-header h2:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 3px;
+  background: yellow;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+/* Nav Bar */
+
+.barra-nav-rec {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+/* FIM Estilização Header */
+
 /* Estilização do TOP */
 body {
   height: 100vh;
-  background-image: linear-gradient(to bottom right, #e45834, #e27b30);
 }
 
 .top {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
-  margin-top: 3%;
+  justify-content: center;
+  margin-top: 100px;
   margin-left: 5%;
   margin-right: 5%;
-}
-
-.top h1 {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 80px;
-  display: flex;
-  align-items: center;
-
-  color: #ffffff;
 }
 
 /* FIM Estilização do TOP */
@@ -233,10 +281,14 @@ body {
 
 /* FIM Album Principal */
 
+ol {
+  padding: 0 !important;
+}
+
 #lista_musica li {
   display: flex;
   flex-direction: column;
-  background-color: #fff;
+  background-color: #fff !important;
   border-radius: 15px;
   width: 30vw;
   height: 50px;
@@ -256,8 +308,9 @@ body {
   font-size: 20px;
   display: flex;
   align-items: center;
+  margin-bottom: 0 !important;
 
-  color: #de5614;
+  color: #340354;
 }
 
 #lista_musica h5 {
@@ -267,12 +320,26 @@ body {
   font-size: 10px;
   display: flex;
   align-items: center;
+  margin-bottom: 0 !important;
 
   color: #3c3c3c;
 }
 
 .album_musicas ol li:hover {
   cursor: pointer;
+}
+
+.album_musicas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.track-artist-lista {
+  font-size: 26px;
+  font-weight: 400;
+  color: #FF00B8;
+  margin-bottom: 10px;
 }
 
 /* FIM Estilização do MID */
@@ -378,9 +445,9 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #fff;
+  background-color: #fff !important;
   border-radius: 15px;
-  width: 422px;
+  width: 550px;
 }
 
 .details {
@@ -391,9 +458,9 @@ body {
 }
 
 .track-art {
-  margin: 10%;
-  height: 250px;
-  width: 250px;
+  margin: 15px;
+  height: 270px;
+  width: 270px;
   border-radius: 15px;
   background-size: cover;
   background-position: center;
@@ -402,12 +469,12 @@ body {
 .track-name {
   font-family: "Poppins";
   font-style: normal;
-  font-weight: 500;
+  font-weight: bold;
   font-size: 26px;
   display: flex;
   align-items: center;
-  color: #de5614;
-  margin-bottom: 2%;
+  color: #340354;
+  margin-top: 5%;
 }
 
 .track-artist {
@@ -418,8 +485,6 @@ body {
   display: flex;
   align-items: center;
   color: #3c3c3c;
-
-  margin-bottom: 5%;
 }
 
 .buttons {
@@ -439,9 +504,9 @@ body {
 .prev-track,
 .next-track {
   padding: 7%;
-  opacity: 0.8;
+  opacity: 0.7;
   transition: opacity 0.2s;
-  color: #3c3c3c;
+  color: #340354;
 }
 
 .repeat-track:hover,
@@ -450,7 +515,7 @@ body {
 .prev-track:hover,
 .next-track:hover {
   opacity: 1;
-  color: #de5614;
+  color: #9900FE;
   transition: color 0.2s;
 }
 
@@ -466,7 +531,7 @@ body {
   -moz-appearance: none;
   appearance: none;
   height: 5px;
-  background: #3c3c3c;
+  background: #340354;
   -webkit-transition: 0.2s;
   transition: opacity 0.2s;
   border-radius: 10px;
@@ -480,7 +545,7 @@ body {
   width: 15px;
   height: 15px;
   background: white;
-  border: 3px solid #de5614;
+  border: 3px solid #9900FE;
   cursor: pointer;
   border-radius: 100%;
 }
@@ -532,7 +597,7 @@ i.fa-step-backward {
 
 /* Para telas menores que 760px de largura */
 
-@media (max-width: 760px) {
+@media (max-width: 1000px) {
   .top h1 {
     font-size: 30px;
   }
@@ -645,6 +710,7 @@ i.fa-step-backward {
 
   .wrapper {
     width: 90vw;
+    margin-top: 4%;
     margin-bottom: 15px;
   }
 
@@ -660,6 +726,11 @@ i.fa-step-backward {
 
   .track-artist {
     font-size: 12px;
+  }
+
+  .track-artist-lista {
+    font-size: 20px;
+    font-weight: 500;
   }
 
   .seek_slider {

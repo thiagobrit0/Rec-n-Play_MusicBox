@@ -7,40 +7,89 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MusicBox</title>
+  
+    <!-- Icone da aba -->
+    <link rel="shortcut icon" href="./assets/img/favicon-senac/favicon.ico" type="image/x-icon" />
+  
     <link rel="stylesheet" href="/assets/css/playlist_style.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Poppins"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
+  
+    <!-- Fontes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="./assets/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+  
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js%22%3E"></script>
+  
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/dfbf29b648.js" crossorigin="anonymous"> </script>
   </head>
+
+  <header>
+    <nav class="navbar navbar-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img class="logo" src="assets/img/header-logo.png" width="200px" alt="" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
+          aria-controls="offcanvasDarkNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+          aria-labelledby="offcanvasDarkNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
+              Menu
+            </h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+              aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#cx cx-1 secao-1">Início</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#cx cx-2 secao-1">Movimento Manguebeat</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#cx cx-3 secao-1">Sobre nós</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Senac no Rec’n’Play 2022 - Projetos</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <img class="barra-nav-rec" src="./assets/img/barra-rec.png" />
+    </nav>
+  </header>
 
   <body>
     <div class="conteudo">
       <div class="top">
         <a href="album.html">
-          <h1>MusicBox</h1>
+          <img src="/assets/img/MusicBox_Logo-Preta.png" alt="">
         </a>
-        <img src="/assets/img/icons/logo_rec.png" alt="Logo Recnplay" />
       </div>
       <div class="mid">
         <div class="album_musicas">
+          <div class="track-artist-lista">Nome do Album</div>
           <ol id="lista_musica"></ol>
         </div>
 
         <div class="player">
           <div class="wrapper">
             <div class="details">
-              <div class="track-art"></div>
               <div class="track-name">Nome da música</div>
               <div class="track-artist">Nome do Album</div>
+              <div class="track-art"></div>
+              <div class="track-text">Texto sobre a música</div>
             </div>
 
             <div class="slider_container">
@@ -86,26 +135,6 @@
                 <i class="fa fa-repeat fa-2x" title="repeat"></i>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-      <div class="bot">
-        <img
-          src="/assets/img/icons/logo_senac.png"
-          alt="Logo Senac"
-          class="logo_senac"
-        />
-        <div class="opcoes">
-          <div class="playlist">
-            <div>
-                <div class="current-track-name">Nome da música</div>
-                <div class="current-track-artist">Nome do Album</div>
-            </div>
-            <img src="/assets/img/icons/playlist.png" alt="Icone playlist">
-          </div>
-          <div class="creditos">
-            <h3>0</h3>
-            <img src="/assets/img/icons/credito.png" alt="Icone créditos" />
           </div>
         </div>
       </div>

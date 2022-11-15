@@ -1,8 +1,8 @@
 let track_art = document.querySelector(".track-art");
 let track_name = document.querySelector(".track-name");
 let track_artist = document.querySelector(".track-artist");
-let current_track_name = document.querySelector(".current-track-name");
-let current_track_artist = document.querySelector(".current-track-artist");
+let track_text = document.querySelector(".track-text");
+let track_artist_lista = document.querySelector(".track-artist-lista");
 
 let playpause_btn = document.querySelector(".playpause-track");
 let next_btn = document.querySelector(".next-track");
@@ -25,65 +25,115 @@ const music_list = [
     id: 0,
     img: "/assets/img/albums/caos_lama.png",
     name: "Corpo De Lama",
-    artist: "Da Lama ao Caos",
+    artist: "Chico Science & Nação Zumbi",
     music: "/assets/music/1_Corpo De Lama.mp3",
+    description: "teste",
   },
   {
     id: 1,
     img: "/assets/img/albums/caos_lama.png",
     name: "Maracatu Atômico",
-    artist: "Da Lama ao Caos",
+    artist: "Chico Science & Nação Zumbi",
     music: "/assets/music/2_Maracatu Atômico.mp3",
+    description: "teste1",
   },
   {
     id: 2,
     img: "/assets/img/albums/caos_lama.png",
     name: "A Praieira",
-    artist: "Da Lama ao Caos",
+    artist: "Chico Science & Nação Zumbi",
     music: "/assets/music/3_A Praieira.mp3",
+    description: "teste1",
   },
   {
     id: 3,
     img: "/assets/img/albums/caos_lama.png",
     name: "A Cidade",
-    artist: "Da Lama ao Caos",
+    artist: "Chico Science & Nação Zumbi",
     music: "/assets/music/4_A Cidade.mp3",
+    description: "teste1",
   },
   {
     id: 4,
     img: "/assets/img/albums/caos_lama.png",
     name: "Manguetown",
-    artist: "Da Lama ao Caos",
+    artist: "Chico Science & Nação Zumbi",
     music: "/assets/music/5_Manguetown.mp3",
+    description: "teste1",
   },
   {
     id: 5,
     img: "/assets/img/albums/caos_lama.png",
     name: "Da Lama ao Caos",
-    artist: "Da Lama ao Caos",
+    artist: "Chico Science & Nação Zumbi",
     music: "/assets/music/6_Da Lama ao Caos.mp3",
+    description: "teste1",
   },
   {
     id: 6,
     img: "/assets/img/albums/caos_lama.png",
     name: "Rios, Pontes e Overdrives",
-    artist: "Da Lama ao Caos",
+    artist: "Chico Science & Nação Zumbi",
     music: "/assets/music/7_Rios, Pontes e Overdrives.mp3",
+    description: "teste1",
   },
   {
     id: 7,
     img: "/assets/img/albums/caos_lama.png",
     name: "Macô",
-    artist: "Da Lama ao Caos",
+    artist: "Chico Science & Nação Zumbi",
     music: "/assets/music/8_Macô.mp3",
+    description: "teste1",
   },
   {
     id: 8,
     img: "/assets/img/albums/caos_lama.png",
     name: "Samba Makossa",
-    artist: "Da Lama ao Caos",
+    artist: "Chico Science & Nação Zumbi",
     music: "/assets/music/10_Samba Makossa.mp3",
+    description: "teste1",
   },
+  {
+    id: 9,
+    img: "/assets/img/albums/caos_lama.png",
+    name: "Samba Makossa",
+    artist: "Chico Science & Nação Zumbi",
+    music: "/assets/music/10_Samba Makossa.mp3",
+    description: "teste1",
+  },
+  {
+    id: 10,
+    img: "/assets/img/albums/caos_lama.png",
+    name: "Samba Makossa",
+    artist: "Chico Science & Nação Zumbi",
+    music: "/assets/music/10_Samba Makossa.mp3",
+    description: "teste1",
+  },
+  {
+    id: 11,
+    img: "/assets/img/albums/caos_lama.png",
+    name: "Samba Makossa",
+    artist: "Chico Science & Nação Zumbi",
+    music: "/assets/music/10_Samba Makossa.mp3",
+    description: "teste1",
+  },
+  {
+    id: 12,
+    img: "/assets/img/albums/caos_lama.png",
+    name: "Samba Makossa",
+    artist: "Chico Science & Nação Zumbi",
+    music: "/assets/music/10_Samba Makossa.mp3",
+    description: "teste1",
+  },
+  {
+    id: 13,
+    img: "/assets/img/albums/caos_lama.png",
+    name: "Samba Makossa",
+    artist: "Chico Science & Nação Zumbi",
+    music: "/assets/music/10_Samba Makossa.mp3",
+    description: "teste1",
+  },
+
 ];
 
 loadTrack(track_index);
@@ -98,9 +148,10 @@ function loadTrack(track_index) {
   track_art.style.backgroundImage = "url(" + music_list[track_index].img + ")";
   track_name.textContent = music_list[track_index].name;
   track_artist.textContent = music_list[track_index].artist;
+  track_text.textContent = music_list[track_index].description;
 
-  current_track_name.textContent = music_list[track_index].name;
-  current_track_artist.textContent = music_list[track_index].artist;
+
+  track_artist_lista.textContent = music_list[track_index].artist;
 
   updateTimer = setInterval(setUpdate, 1000);
 
