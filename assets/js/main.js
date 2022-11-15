@@ -24,7 +24,7 @@ let updateTimer;
 const urlParams = new URLSearchParams(window.location.search);
 const id = urlParams.get("id");
 
-const music_list = [{
+const musics = [{
     id: 0,
     idalbum: 4,
     img: "/assets/img/albums/caos_lama.png",
@@ -436,7 +436,7 @@ const music_list = [{
     name: "Balanço",
     artist: "Nação Zumbi",
     album: "Radiola NZ, Vol. 1",
-    music: "/assets/music/RadiolaNZ/01. Refazenda.mp3",
+    music: "/assets/music/RadiolaNZ/02. Balanço.mp3",
     description: "teste1",
   },
   {
@@ -516,7 +516,7 @@ const music_list = [{
     name: "Hoje, Amanhã E Depois",
     artist: "Nação Zumbi",
     album: "Futura",
-    music: "/assets/music/Futura/01. Refazenda.mp3",
+    music: "/assets/music/Futura/01 - Hoje, Amanhã E Depois.mp3",
     description: "teste1",
   },
 
@@ -640,7 +640,7 @@ const music_list = [{
     name: "Manguebit",
     artist: "Mundo Livre S/A",
     album: "Samba esquema noise",
-    music: "/assets/music/Futura/01. Manguebit.mp3",
+    music: "/assets/music/SambaEsquema/01. Manguebit.mp3",
     description: "teste1",
   },
 
@@ -651,7 +651,7 @@ const music_list = [{
     name: "A Bola do Jogo",
     artist: "Mundo Livre S/A",
     album: "Samba esquema noise",
-    music: "/assets/music/Futura/02. A Bola do Jogo.mp3",
+    music: "/assets/music/SambaEsquema/02. A Bola do Jogo.mp3",
     description: "teste1",
   },
   {
@@ -661,7 +661,7 @@ const music_list = [{
     name: "Livre Iniciativa",
     artist: "Mundo Livre S/A",
     album: "Samba esquema noise",
-    music: "/assets/music/Futura/03. Livre Iniciativa.mp3",
+    music: "/assets/music/SambaEsquema/03. Livre Iniciativa.mp3",
     description: "teste1",
   },
   {
@@ -671,7 +671,7 @@ const music_list = [{
     name: "Terra Escura",
     artist: "Mundo Livre S/A",
     album: "Samba esquema noise",
-    music: "/assets/music/Futura/04. Terra Escura.mp3",
+    music: "/assets/music/SambaEsquema/04. Terra Escura.mp3",
     description: "teste1",
   },
   {
@@ -681,7 +681,7 @@ const music_list = [{
     name: "Saldo de Aratú",
     artist: "Mundo Livre S/A",
     album: "Samba esquema noise",
-    music: "/assets/music/Futura/05. Saldo de Aratú.mp3",
+    music: "/assets/music/SambaEsquema/05. Saldo de Aratú.mp3",
     description: "teste1",
   },
   {
@@ -691,7 +691,7 @@ const music_list = [{
     name: "Uma Mulher com W... Maiúsculo",
     artist: "Mundo Livre S/A",
     album: "Samba esquema noise",
-    music: "/assets/music/Futura/06. Uma Mulher com W... Maiúsculo.mp3",
+    music: "/assets/music/SambaEsquema/06. Uma Mulher com W... Maiúsculo.mp3",
     description: "teste1",
   },
   {
@@ -701,7 +701,7 @@ const music_list = [{
     name: "Homero, o Junkie",
     artist: "Mundo Livre S/A",
     album: "Samba esquema noise",
-    music: "/assets/music/Futura/07. Homero, o Junkie.mp3",
+    music: "/assets/music/SambaEsquema/07. Homero, o Junkie.mp3",
     description: "teste1",
   },
   {
@@ -711,7 +711,7 @@ const music_list = [{
     name: "Rios (Smart Dugs), Pontes & Overdrives",
     artist: "Mundo Livre S/A",
     album: "Samba esquema noise",
-    music: "/assets/music/Futura/08. Rios (Smart Dugs), Pontes & Overdrives.mp3",
+    music: "/assets/music/SambaEsquema/08. Rios (Smart Dugs), Pontes & Overdrives.mp3",
     description: "teste1",
   },
   {
@@ -721,7 +721,7 @@ const music_list = [{
     name: "Musa da Ilha Grande",
     artist: "Mundo Livre S/A",
     album: "Samba esquema noise",
-    music: "/assets/music/Futura/09. Musa da Ilha Grande.mp3",
+    music: "/assets/music/SambaEsquema/09. Musa da Ilha Grande.mp3",
     description: "teste1",
   },
   {
@@ -731,7 +731,7 @@ const music_list = [{
     name: "Cidade Estuário",
     artist: "Mundo Livre S/A",
     album: "Samba esquema noise",
-    music: "/assets/music/Futura/10. Cidade Estuário.mp3",
+    music: "/assets/music/SambaEsquema/10. Cidade Estuário.mp3",
     description: "teste1",
   },
   {
@@ -741,7 +741,7 @@ const music_list = [{
     name: "O Rapaz do B... Preto",
     artist: "Mundo Livre S/A",
     album: "Samba esquema noise",
-    music: "/assets/music/Futura/O Rapaz do B... Preto.mp3",
+    music: "/assets/music/SambaEsquema/11. O Rapaz do B... Preto.mp3",
     description: "teste1",
   },
   {
@@ -751,13 +751,13 @@ const music_list = [{
     name: "Sob o Calçamento (se Espumar é Gente)",
     artist: "Mundo Livre S/A",
     album: "Samba esquema noise",
-    music: "/assets/music/Futura/12. Sob o Calçamento (se Espumar é Gente).mp3",
+    music: "/assets/music/SambaEsquema/12. Sob o Calçamento (se Espumar é Gente).mp3",
     description: "teste1",
   },
   {
     id: 71,
     idalbum: 6,
-    img: "/assets/img/albums/sambaesquema.png",
+    img: "/assets/img/albums/afrociberdelia.jpg",
     name: "Mateus Enter",
     artist: "Chico Science & Nação Zumbi",
     album: "Afrociberdelia",
@@ -767,7 +767,7 @@ const music_list = [{
   {
     id: 72,
     idalbum: 6,
-    img: "/assets/img/albums/sambaesquema.png",
+    img: "/assets/img/albums/afrociberdelia.jpg",
     name: "O Cidadão do Mundo",
     artist: "Chico Science & Nação Zumbi",
     album: "Afrociberdelia",
@@ -777,7 +777,7 @@ const music_list = [{
   {
     id: 73,
     idalbum: 6,
-    img: "/assets/img/albums/sambaesquema.png",
+    img: "/assets/img/albums/afrociberdelia.jpg",
     name: "Etnia",
     artist: "Chico Science & Nação Zumbi",
     album: "Afrociberdelia",
@@ -787,7 +787,7 @@ const music_list = [{
   {
     id: 74,
     idalbum: 6,
-    img: "/assets/img/albums/sambaesquema.png",
+    img: "/assets/img/albums/afrociberdelia.jpg",
     name: "Quilombo Groove",
     artist: "Chico Science & Nação Zumbi",
     album: "Afrociberdelia",
@@ -797,7 +797,7 @@ const music_list = [{
   {
     id: 75,
     idalbum: 6,
-    img: "/assets/img/albums/sambaesquema.png",
+    img: "/assets/img/albums/afrociberdelia.jpg",
     name: "Macô",
     artist: "Chico Science, Nação Zumbi, Gilberto Gil e Marcelo D2",
     album: "Afrociberdelia",
@@ -807,7 +807,7 @@ const music_list = [{
   {
     id: 76,
     idalbum: 6,
-    img: "/assets/img/albums/sambaesquema.png",
+    img: "/assets/img/albums/afrociberdelia.jpg",
     name: "Um Passeio no Mundo Livre",
     artist: "Chico Science & Nação Zumbi",
     album: "Afrociberdelia",
@@ -817,7 +817,7 @@ const music_list = [{
   {
     id: 77,
     idalbum: 6,
-    img: "/assets/img/albums/sambaesquema.png",
+    img: "/assets/img/albums/afrociberdelia.jpg",
     name: "Samba do Lado",
     artist: "Chico Science, Nação Zumbi, Fred 04",
     album: "Afrociberdelia",
@@ -827,7 +827,7 @@ const music_list = [{
   {
     id: 78,
     idalbum: 6,
-    img: "/assets/img/albums/sambaesquema.png",
+    img: "/assets/img/albums/afrociberdelia.jpg",
     name: "Maracatu Atômico",
     artist: "Chico Science & Nação Zumbi",
     album: "Afrociberdelia",
@@ -837,7 +837,7 @@ const music_list = [{
   {
     id: 79,
     idalbum: 6,
-    img: "/assets/img/albums/sambaesquema.png",
+    img: "/assets/img/albums/afrociberdelia.jpg",
     name: "O Encontro De Isaac Asimov Com Santos Dumont No Céu",
     artist: "Chico Science & Nação Zumbi",
     album: "Afrociberdelia",
@@ -847,7 +847,7 @@ const music_list = [{
   {
     id: 80,
     idalbum: 6,
-    img: "/assets/img/albums/sambaesquema.png",
+    img: "/assets/img/albums/afrociberdelia.jpg",
     name: "Corpo de Lama",
     artist: "Chico Science & Nação Zumbi",
     album: "Afrociberdelia",
@@ -857,7 +857,7 @@ const music_list = [{
   {
     id: 81,
     idalbum: 6,
-    img: "/assets/img/albums/sambaesquema.png",
+    img: "/assets/img/albums/afrociberdelia.jpg",
     name: "Sobremesa",
     artist: "Chico Science & Nação Zumbi",
     album: "Afrociberdelia",
@@ -867,7 +867,7 @@ const music_list = [{
   {
     id: 82,
     idalbum: 6,
-    img: "/assets/img/albums/sambaesquema.png",
+    img: "/assets/img/albums/afrociberdelia.jpg",
     name: "Manguetown",
     artist: "Chico Science & Nação Zumbi",
     album: "Afrociberdelia",
@@ -877,7 +877,7 @@ const music_list = [{
   {
     id: 83,
     idalbum: 6,
-    img: "/assets/img/albums/sambaesquema.png",
+    img: "/assets/img/albums/afrociberdelia.jpg",
     name: "Um Satélite na Cabeca",
     artist: "Chico Science & Nação Zumbi",
     album: "Afrociberdelia",
@@ -887,7 +887,7 @@ const music_list = [{
   {
     id: 84,
     idalbum: 6,
-    img: "/assets/img/albums/sambaesquema.png",
+    img: "/assets/img/albums/afrociberdelia.jpg",
     name: "Baião Ambiental",
     artist: "Chico Science & Nação Zumbi",
     album: "Afrociberdelia",
@@ -897,7 +897,7 @@ const music_list = [{
   {
     id: 85,
     idalbum: 6,
-    img: "/assets/img/albums/sambaesquema.png",
+    img: "/assets/img/albums/afrociberdelia.jpg",
     name: "Sangue de Bairro",
     artist: "Chico Science & Nação Zumbi",
     album: "Afrociberdelia",
@@ -907,7 +907,7 @@ const music_list = [{
   {
     id: 86,
     idalbum: 6,
-    img: "/assets/img/albums/sambaesquema.png",
+    img: "/assets/img/albums/afrociberdelia.jpg",
     name: "Enquanto o Mundo Explode",
     artist: "Chico Science & Nação Zumbi",
     album: "Afrociberdelia",
@@ -917,7 +917,7 @@ const music_list = [{
   {
     id: 87,
     idalbum: 6,
-    img: "/assets/img/albums/sambaesquema.png",
+    img: "/assets/img/albums/afrociberdelia.jpg",
     name: "Interlude Zumbi",
     artist: "Chico Science & Nação Zumbi",
     album: "Afrociberdelia",
@@ -927,7 +927,7 @@ const music_list = [{
   {
     id: 88,
     idalbum: 6,
-    img: "/assets/img/albums/sambaesquema.png",
+    img: "/assets/img/albums/afrociberdelia.jpg",
     name: "Criança de Domingo",
     artist: "Chico Science & Nação Zumbi",
     album: "Afrociberdelia",
@@ -937,7 +937,7 @@ const music_list = [{
   {
     id: 89,
     idalbum: 6,
-    img: "/assets/img/albums/sambaesquema.png",
+    img: "/assets/img/albums/afrociberdelia.jpg",
     name: "Amor de Muito",
     artist: "Chico Science & Nação Zumbi",
     album: "Afrociberdelia",
@@ -947,7 +947,7 @@ const music_list = [{
   {
     id: 90,
     idalbum: 6,
-    img: "/assets/img/albums/sambaesquema.png",
+    img: "/assets/img/albums/afrociberdelia.jpg",
     name: "20 - Samidarish",
     artist: "Chico Science & Nação Zumbi",
     album: "Afrociberdelia",
@@ -957,7 +957,10 @@ const music_list = [{
 
 ];
 
-pegaTrackIndex();
+const music_list = [];
+
+pegaTrackAlbuns();
+
 loadTrack(track_index);
 
 function loadTrack(track_index) {
@@ -1119,13 +1122,15 @@ function listarMusicas() {
   });
 }
 
-function pegaTrackIndex() {
-  let count_index = 0;
-  music_list.forEach((music_list) => {
-    if (music_list.idalbum == id) {
-      track_index = music_list.id;
-      count_index++;
-    }
-  });
-  track_index = track_index - count_index + 1;
+function pegaTrackAlbuns() {
+  if(id != null) {
+    let atualiza_id = 0;
+    musics.forEach((musics_list) => {
+      if (musics_list.idalbum == id) {
+        musics_list.id = atualiza_id;
+        music_list.push(musics_list);
+        atualiza_id++;
+      }
+    });
+  }
 }
