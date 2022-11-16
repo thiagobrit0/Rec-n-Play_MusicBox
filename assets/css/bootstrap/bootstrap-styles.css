@@ -92,6 +92,7 @@
     border-radius: 10px;
     overflow: hidden;
     height: 300px;
+    width: 300px;
   }
   
   .team .member .member-content {
