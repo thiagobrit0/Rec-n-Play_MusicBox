@@ -91,6 +91,7 @@
   .team .member img {
     border-radius: 10px;
     overflow: hidden;
+    height: 300px;
   }
   
   .team .member .member-content {
