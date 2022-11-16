@@ -52,13 +52,13 @@
           <div class="offcanvas-body">
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#cx cx-1 secao-1">Início</a>
+                <a class="nav-link active" aria-current="page" href="#musicbox">Início</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#cx cx-2 secao-1">Movimento Manguebeat</a>
+                <a class="nav-link" href="#movimento">Movimento Manguebeat</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#cx cx-3 secao-1">Sobre nós</a>
+                <a class="nav-link" href="#equipe">Sobre nós</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="https://site-geral-senacno-recnplay.netlify.app/" target="_blank">Senac no Rec'n'Play 2022 - Projetos</a>
@@ -72,7 +72,7 @@
   </header>
 
   <main>
-    <section class="music-section">
+    <section class="music-section" id="musicbox">
       <div>
         <img class="section-header rounded mx-auto d-block" src="./assets/img/MusicBox_Logo-Branca.png" />
       </div>
@@ -137,7 +137,7 @@
     </section>
 
     <!-- Movimento Manguebeat -->
-    <section class="cards-info">
+    <section class="cards-info" id="movimento">
       <div class="container card-content sobre-nos">
         <div class="section-header">
           <h2>Movimento Manguebeat</h2>
@@ -146,10 +146,10 @@
           <div class="card mb-3">
             <div class="row g-0">
               <div class="col-md-6">
-                <img class="img-fluid rounded-start img-thumbnail" src="assets/img/icons/manguecapa.png" alt="...">
+                <img class="img-fluid rounded-start img-thumbnail" src="assets/img/icons/manguecapa (2).png" alt="...">
               </div>
-              <div class="col-md-6">
-                <div class="card-body">
+              <div class="col-md-5">
+                <div class="card-body" style="max-width: 400px; ">
                   <h5 class="card-title">Recife, 1991</h5>
                   <p class="card-text">
                     O termo “manguebeat” é fruto da junção da palavra mangue (ecossistema típico
@@ -161,30 +161,58 @@
               </div>
             </div>
           </div>
+
+          <blockquote class="blockquote parafrase lead">
+            <p class="mb-0 strong"><em>"Não conseguimos acompanhar o motor da história, mas somos batizados pelo batuque"</em></p>
+            </blockquote>
+          
+          <div class="card mb-3">
+            <div class="row g-0">
+              <div class="col-md-6">
+                <img class="img-fluid rounded-start img-thumbnail" src="assets/img/icons/chico-capa-2.png" alt="...">
+              </div>
+              <div class="col-md-5">
+                <div class="card-body" style="max-width: 400px;">
+                  <h5 class="card-title">A proposta do movimento</h5>
+                  <p class="card-text mb-0">
+                    O movimento Manguebeat é apresentado como um movimento que trazia para a cena 
+                    política e cultural os jovens de “periferia”, com o intuito de mudar o contexto de
+                    estagnação cultural que a cidade se encontrava nos anos de 1990
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <blockquote class="blockquote parafrase lead">
+            <p class="mb-0 strong"><em>"A cidade não pára, a cidade só cresce. O de cima sobe e o de baixo desce."</em></p>
+            </blockquote>
+
           <div class="card mb-3" style="margin-top: 5%;">
             <div class="row g-0">
               <div class="col-md-6">
-                <div class="card-body">
-                  <h5 class="card-title">Recife, 1991</h5>
+                <img class="img-fluid rounded-start img-thumbnail" src="assets/img/icons/manguebitfoto.webp" alt="...">
+              </div>
+              <div class="col-md-6" >
+                <div class="card-body align-items-center" style="max-width: 400px;">
+                  <h5 class="card-title">Embasamento artístico</h5>
                   <p class="card-text">
-                    O termo “manguebeat” é fruto da junção da palavra mangue (ecossistema típico
-                    da costa do Nordeste brasileiro e da cidade de Recife) com a palavra "beat", do inglês, que
-                    significa batida – mas que também remete à linguagem dos códigos binários utilizados na
-                    informática: beat, bits.
+                    A ideia do movimento era justamente universalizar os elementos nacionais 
+                    (a fusão dos ritmos regionais e o pop), propondo mostrar uma nova cena para o 
+                    mundo, conectando o Brasil com o cenário pop mundial e estabelecer um diálogo 
+                    com as manifestações artísticas que trouxeram à tona um Brasil cosmopolita
                   </p>
                 </div>
               </div>
-              <div class="col-md-6">
-                <img class="img-fluid rounded-start img-thumbnail" src="assets/img/icons/chico-capa-1.png" alt="...">
-              </div>
             </div>
           </div>
+          
         </div>
       </div>
     </section>
 
     <!-- ======= Sobre o time ======= -->
-    <section class="team">
+    <section class="team" id="equipe">
       <div class="container sobre-nos">
         <div class="section-header">
           <h2>Sobre Nós</h2>
@@ -230,6 +258,21 @@
                 <!-- Perguntar se quer -->
                 <a href="https://www.linkedin.com/in/gabriel-ferreira-537070220/" target="_blank"><i
                     class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Fourth Team member-->
+          <div class="col-xl-3 col-md-6 d-flex">
+            <div class="member">
+              <img src="/assets/img/team-Ncompressed/gabriellaC.jpeg" class="img-fluid" alt="" />
+              <h4>Gabriella Carvalho</h4>
+              <span>Figma Deisgner</span>
+              <div class="social">
+                <a href="https://github.com/bcgabi" target="_blank"><i class="bi bi-github"></i></a>
+                <a href="https://www.instagram.com/blackb.tches/" target="_blank"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/gabriella-carvalho-13a402234/"><i class="bi bi-linkedin"
+                    target="_blank"></i></a>
               </div>
             </div>
           </div>
@@ -313,7 +356,7 @@
           <!-- Nineth Team member-->
           <div class="col-xl-3 col-md-6 d-flex">
             <div class="member">
-              <img src="/assets/img/team-Ncompressed/thiagoBrito.png" class="img-fluid" alt="" />
+              <img src="/assets/img/team-Ncompressed/thiagoBrito.jpeg" class="img-fluid" alt="" />
               <h4>Thiago Brito</h4>
               <span>Front-End Developer/Team Leader</span>
               <div class="social">
@@ -396,6 +439,7 @@
         <div class="container mt-4">
           <div class="copyright">
             &copy; Copyright <strong><span>Faculdade Senac Pernambuco</span></strong> <br>All Rights Reserved
+            <br> Site desenvolvido com intuito acadêmico 
           </div>
         </div>
       </div>
