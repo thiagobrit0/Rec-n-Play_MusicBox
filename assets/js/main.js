@@ -32,7 +32,7 @@ const musics = [{
     artist: "Chico Science & Nação Zumbi",
     album: "Da Lama ao Caos",
     music: "/assets/music/DaLamaaoCaos/01. Monólogo ao Pé do Ouvido.mp3",
-    description: "teste",
+    description: "",
   },
   {
     id: 1,
@@ -42,7 +42,7 @@ const musics = [{
     artist: "Chico Science & Nação Zumbi",
     album: "Da Lama ao Caos",
     music: "/assets/music/DaLamaaoCaos/02. Banditismo por Uma Questão de Classe.mp3",
-    description: "teste",
+    description: "",
   },
   {
     id: 2,
@@ -52,7 +52,7 @@ const musics = [{
     artist: "Chico Science & Nação Zumbi",
     album: "Da Lama ao Caos",
     music: "/assets/music/DaLamaaoCaos/03. Rios, Pontes & Overdrives.mp3",
-    description: "teste1",
+    description: "",
   },
   {
     id: 3,
@@ -62,7 +62,7 @@ const musics = [{
     artist: "Chico Science & Nação Zumbi",
     album: "Da Lama ao Caos",
     music: "/assets/music/DaLamaaoCaos/04. A Cidade - Boa Noite do Velho Faceta (Amor de Criança).mp3",
-    description: "teste1",
+    description: "",
   },
   {
     id: 4,
@@ -72,7 +72,7 @@ const musics = [{
     artist: "Chico Science & Nação Zumbi",
     album: "Da Lama ao Caos",
     music: "/assets/music/DaLamaaoCaos/05. A Praieira.mp3",
-    description: "teste1",
+    description: "",
   },
   {
     id: 5,
@@ -82,7 +82,7 @@ const musics = [{
     artist: "Chico Science & Nação Zumbi",
     album: "Da Lama ao Caos",
     music: "/assets/music/DaLamaaoCaos/06. Samba Makossa.mp3",
-    description: "teste1",
+    description: "",
   },
   {
     id: 6,
@@ -92,7 +92,7 @@ const musics = [{
     artist: "Chico Science & Nação Zumbi",
     album: "Da Lama ao Caos",
     music: "/assets/music/DaLamaaoCaos/07. Da Lama Ao Caos.mp3",
-    description: "teste1",
+    description: "",
   },
   {
     id: 7,
@@ -102,7 +102,7 @@ const musics = [{
     artist: "Chico Science & Nação Zumbi",
     album: "Da Lama ao Caos",
     music: "/assets/music/DaLamaaoCaos/08. Maracatu de Tiro Certeiro.mp3",
-    description: "teste1",
+    description: "",
   },
   {
     id: 8,
@@ -112,7 +112,7 @@ const musics = [{
     artist: "Chico Science & Nação Zumbi",
     album: "Da Lama ao Caos",
     music: "/assets/music/DaLamaaoCaos/09. Salustiano Song.mp3",
-    description: "teste1",
+    description: "",
   },
   {
     id: 9,
@@ -122,7 +122,7 @@ const musics = [{
     artist: "Chico Science & Nação Zumbi",
     album: "Da Lama ao Caos",
     music: "/assets/music/DaLamaaoCaos/10. Antene-Se.mp3",
-    description: "teste1",
+    description: "",
   },
   {
     id: 10,
@@ -132,7 +132,7 @@ const musics = [{
     artist: "Chico Science & Nação Zumbi",
     album: "Da Lama ao Caos",
     music: "/assets/music/DaLamaaoCaos/11. Risoflora.mp3",
-    description: "teste1",
+    description: "",
   },
   {
     id: 11,
@@ -142,7 +142,7 @@ const musics = [{
     artist: "Chico Science & Nação Zumbi",
     album: "Da Lama ao Caos",
     music: "/assets/music/DaLamaaoCaos/12. Lixo do Mangue.mp3",
-    description: "teste1",
+    description: "",
   },
   {
     id: 12,
@@ -152,7 +152,7 @@ const musics = [{
     artist: "Chico Science & Nação Zumbi",
     album: "Da Lama ao Caos",
     music: "/assets/music/DaLamaaoCaos/13. Computadores Fazem Arte.mp3",
-    description: "teste1",
+    description: "",
   },
   {
     id: 13,
@@ -162,7 +162,7 @@ const musics = [{
     artist: "Chico Science & Nação Zumbi",
     album: "Da Lama ao Caos",
     music: "/assets/music/DaLamaaoCaos/14. Côco Dub (Afrociberdelia).mp3",
-    description: "teste1",
+    description: "",
   },
 
   {
@@ -173,7 +173,7 @@ const musics = [{
     artist: "Chico Science, Nação Zumbi, Jorge Ben Jor, Fred 04, Marcelo D2, Falcão",
     album: "C.S.N.Z",
     music: "/assets/music/CSNZ/01 Malungo.mp3",
-    description: "teste1",
+    description: "",
   },
 
   {
@@ -184,7 +184,7 @@ const musics = [{
     artist: "Chico Science & Nação Zumbi",
     album: "C.S.N.Z",
     music: "/assets/music/CSNZ/02 Nos Quintais Do Mundo.mp3",
-    description: "teste1",
+    description: "",
   },
   {
     id: 16,
@@ -194,7 +194,7 @@ const musics = [{
     artist: "Chico Science & Nação Zumbi",
     album: "C.S.N.Z",
     music: "/assets/music/CSNZ/03 Protótipo Sambadélico de Mensagem Digital.mp3",
-    description: "teste1",
+    description: "",
   },
   {
     id: 17,
@@ -204,7 +204,7 @@ const musics = [{
     artist: "Chico Science & Nação Zumbi",
     album: "C.S.N.Z",
     music: "/assets/music/CSNZ/04 Dubismo.mp3",
-    description: "teste1",
+    description: "",
   },
   {
     id: 18,
@@ -214,7 +214,7 @@ const musics = [{
     artist: "Chico Science & Nação Zumbi",
     album: "C.S.N.Z",
     music: "/assets/music/CSNZ/05 Interlude Cien-Zia.mp3",
-    description: "teste1",
+    description: "",
   },
   {
     id: 19,
@@ -224,7 +224,7 @@ const musics = [{
     artist: "Chico Science & Nação Zumbi",
     album: "C.S.N.Z",
     music: "/assets/music/CSNZ/06 Quilombo Groove (Ao Vivo).mp3",
-    description: "teste1",
+    description: "",
   },
   {
     id: 20,
@@ -234,7 +234,7 @@ const musics = [{
     artist: "Chico Science & Nação Zumbi",
     album: "C.S.N.Z",
     music: "/assets/music/CSNZ/07 Um Satélite Na Cabeça [Ao Vivo].mp3",
-    description: "teste1",
+    description: "",
   },
   {
     id: 21,
@@ -244,7 +244,7 @@ const musics = [{
     artist: "Chico Science & Nação Zumbi",
     album: "C.S.N.Z",
     music: "/assets/music/CSNZ/08 Pout-Pourri-Lixo Do Mangue-Enquanto O Mundo Explode [Ao Vivo].mp3",
-    description: "teste1",
+    description: "",
   },
   {
     id: 22,
@@ -254,7 +254,7 @@ const musics = [{
     artist: "Chico Science & Nação Zumbi",
     album: "C.S.N.Z",
     music: "/assets/music/CSNZ/09 Sobremesa [Ao Vivo].mp3",
-    description: "teste1",
+    description: "",
   },
   {
     id: 23,
@@ -264,7 +264,7 @@ const musics = [{
     artist: "Chico Science & Nação Zumbi",
     album: "C.S.N.Z",
     music: "/assets/music/CSNZ/10 Salustiano Song [Ao Vivo].mp3",
-    description: "teste1",
+    description: "",
   },
 
   {
@@ -275,7 +275,7 @@ const musics = [{
     artist: "Mombojó",
     album: "Nadadenovo",
     music: "/assets/music/Nadadenovo/01 Cabidela.mp3",
-    description: "teste1",
+    description: "",
   },
   {
     id: 25,
@@ -285,7 +285,7 @@ const musics = [{
     artist: "Mombojó",
     album: "Nadadenovo",
     music: "/assets/music/Nadadenovo/02 Deixe-se Acreditar.mp3",
-    description: "teste1",
+    description: "",
   },
   {
     id: 26,
@@ -295,7 +295,7 @@ const musics = [{
     artist: "Mombojó",
     album: "Nadadenovo",
     music: "/assets/music/Nadadenovo/03 Nem Parece.mp3",
-    description: "teste1",
+    description: "",
   },
   {
     id: 27,
@@ -305,7 +305,7 @@ const musics = [{
     artist: "Mombojó",
     album: "Nadadenovo",
     music: "/assets/music/Nadadenovo/04 Discurso Burocrático.mp3",
-    description: "teste1",
+    description: "",
   },
   {
     id: 28,
@@ -315,7 +315,7 @@ const musics = [{
     artist: "Mombojó",
     album: "Nadadenovo",
     music: "/assets/music/Nadadenovo/05 A Missa.mp3",
-    description: "teste1",
+    description: "",
   },
   {
     id: 29,
@@ -325,7 +325,7 @@ const musics = [{
     artist: "Mombojó",
     album: "Nadadenovo",
     music: "/assets/music/Nadadenovo/06 Absorva.mp3",
-    description: "teste1",
+    description: "",
   },
   {
     id: 30,
@@ -335,7 +335,7 @@ const musics = [{
     artist: "Mombojó",
     album: "Nadadenovo",
     music: "/assets/music/Nadadenovo/07 O Céu, O Sol E O Mar.mp3",
-    description: "teste1",
+    description: "",
   },
   {
     id: 31,
@@ -345,7 +345,7 @@ const musics = [{
     artist: "Mombojó",
     album: "Nadadenovo",
     music: "/assets/music/Nadadenovo/08 Adelaide.mp3",
-    description: "teste1",
+    description: "",
   },
   {
     id: 32,
@@ -355,7 +355,7 @@ const musics = [{
     artist: "Mombojó",
     album: "Nadadenovo",
     music: "/assets/music/Nadadenovo/09 Duas Cores.mp3",
-    description: "teste1",
+    description: "",
   },
   {
     id: 33,
@@ -365,7 +365,7 @@ const musics = [{
     artist: "Mombojó",
     album: "Nadadenovo",
     music: "/assets/music/Nadadenovo/10 Estático.mp3",
-    description: "teste1",
+    description: "",
   },
   {
     id: 34,
@@ -375,7 +375,7 @@ const musics = [{
     artist: "Mombojó",
     album: "Nadadenovo",
     music: "/assets/music/Nadadenovo/11 Merda.mp3",
-    description: "teste1",
+    description: "",
   },
   {
     id: 35,
@@ -385,7 +385,7 @@ const musics = [{
     artist: "Mombojó",
     album: "Nadadenovo",
     music: "/assets/music/Nadadenovo/12 Splash Shine.mp3",
-    description: "teste1",
+    description: "",
   },
   {
     id: 36,
@@ -395,7 +395,7 @@ const musics = [{
     artist: "Mombojó",
     album: "Nadadenovo",
     music: "/assets/music/Nadadenovo/13 Faaca.mp3",
-    description: "teste1",
+    description: "",
   },
   {
     id: 37,
@@ -405,7 +405,7 @@ const musics = [{
     artist: "Mombojó",
     album: "Nadadenovo",
     music: "/assets/music/Nadadenovo/14 Baú.mp3",
-    description: "teste1",
+    description: "",
   },
   {
     id: 38,
@@ -415,7 +415,7 @@ const musics = [{
     artist: "Mombojó",
     album: "Nadadenovo",
     music: "/assets/music/Nadadenovo/15 Container.mp3",
-    description: "teste1",
+    description: "",
   },
 
   {
@@ -426,7 +426,7 @@ const musics = [{
     artist: "Nação Zumbi",
     album: "Radiola NZ, Vol. 1",
     music: "/assets/music/RadiolaNZ/01. Refazenda.mp3",
-    description: "teste1",
+    description: "",
   },
 
   {
@@ -437,7 +437,7 @@ const musics = [{
     artist: "Nação Zumbi",
     album: "Radiola NZ, Vol. 1",
     music: "/assets/music/RadiolaNZ/02. Balanço.mp3",
-    description: "teste1",
+    description: "",
   },
   {
     id: 41,
@@ -447,7 +447,7 @@ const musics = [{
     artist: "Nação Zumbi & Ney Matogrosso",
     album: "Radiola NZ, Vol. 1",
     music: "/assets/music/RadiolaNZ/03. Amor.mp3",
-    description: "teste1",
+    description: "",
   },
   {
     id: 42,
@@ -457,7 +457,7 @@ const musics = [{
     artist: "Nação Zumbi",
     album: "Radiola NZ, Vol. 1",
     music: "/assets/music/RadiolaNZ/04. Não Há Dinheiro Que Pague.mp3",
-    description: "teste1",
+    description: "",
   },
   {
     id: 43,
@@ -467,7 +467,7 @@ const musics = [{
     artist: "Nação Zumbi",
     album: "Radiola NZ, Vol. 1",
     music: "/assets/music/RadiolaNZ/05. Do Nothing.mp3",
-    description: "teste1",
+    description: "",
   },
   {
     id: 44,
@@ -477,7 +477,7 @@ const musics = [{
     artist: "Nação Zumbi",
     album: "Radiola NZ, Vol. 1",
     music: "/assets/music/RadiolaNZ/06. Dois Animais Na Selva Suja Da Rua.mp3",
-    description: "teste1",
+    description: "",
   },
   {
     id: 45,
@@ -487,7 +487,7 @@ const musics = [{
     artist: "Nação Zumbi",
     album: "Radiola NZ, Vol. 1",
     music: "/assets/music/RadiolaNZ/07. Tomorrow Never Knows.mp3",
-    description: "teste1",
+    description: "",
   },
   {
     id: 46,
@@ -497,7 +497,7 @@ const musics = [{
     artist: "Nação Zumbi",
     album: "Radiola NZ, Vol. 1",
     music: "/assets/music/RadiolaNZ/08. Sexual Healing.mp3",
-    description: "teste1",
+    description: "",
   },
   {
     id: 47,
@@ -507,7 +507,7 @@ const musics = [{
     artist: "Nação Zumbi",
     album: "Radiola NZ, Vol. 1",
     music: "/assets/music/RadiolaNZ/09. Ashes To Ashes.mp3",
-    description: "teste1",
+    description: "",
   },
   {
     id: 48,
@@ -517,7 +517,7 @@ const musics = [{
     artist: "Nação Zumbi",
     album: "Futura",
     music: "/assets/music/Futura/01 - Hoje, Amanhã E Depois.mp3",
-    description: "teste1",
+    description: "",
   },
 
   {
@@ -528,7 +528,7 @@ const musics = [{
     artist: "Nação Zumbi",
     album: "Futura",
     music: "/assets/music/Futura/02 - Na Hora De Ir.mp3",
-    description: "teste1",
+    description: "",
   },
   {
     id: 50,
@@ -538,7 +538,7 @@ const musics = [{
     artist: "Nação Zumbi",
     album: "Futura",
     music: "/assets/music/Futura/03 - Memorando.mp3",
-    description: "teste1",
+    description: "",
   },
   {
     id: 51,
@@ -548,7 +548,7 @@ const musics = [{
     artist: "Nação Zumbi",
     album: "Futura",
     music: "/assets/music/Futura/04 - A Ilha.mp3",
-    description: "teste1",
+    description: "",
   },
   {
     id: 52,
@@ -558,7 +558,7 @@ const musics = [{
     artist: "Nação Zumbi",
     album: "Futura",
     music: "/assets/music/Futura/05 - Respirando.mp3",
-    description: "teste1",
+    description: "",
   },
   {
     id: 53,
@@ -568,7 +568,7 @@ const musics = [{
     artist: "Nação Zumbi",
     album: "Futura",
     music: "/assets/music/Futura/06 - Voyager.mp3",
-    description: "teste1",
+    description: "",
   },
   {
     id: 53,
@@ -578,7 +578,7 @@ const musics = [{
     artist: "Nação Zumbi",
     album: "Futura",
     music: "/assets/music/Futura/07 - O Expresso Da Elétrica Avenida.mp3",
-    description: "teste1",
+    description: "",
   },
   {
     id: 54,
@@ -588,7 +588,7 @@ const musics = [{
     artist: "Nação Zumbi",
     album: "Futura",
     music: "/assets/music/Futura/08 - Nebulosa.mp3",
-    description: "teste1",
+    description: "",
   },
   {
     id: 55,
@@ -598,7 +598,7 @@ const musics = [{
     artist: "Nação Zumbi",
     album: "Futura",
     music: "/assets/music/Futura/09 - Sem Preço.mp3",
-    description: "teste1",
+    description: "",
   },
 
   {
@@ -609,7 +609,7 @@ const musics = [{
     artist: "Nação Zumbi",
     album: "Futura",
     music: "/assets/music/Futura/10 - Vai Buscar.mp3",
-    description: "teste1",
+    description: "",
   },
 
   {
@@ -620,7 +620,7 @@ const musics = [{
     artist: "Nação Zumbi",
     album: "Futura",
     music: "/assets/music/Futura/11 - Pode Acreditar.mp3",
-    description: "teste1",
+    description: "",
   },
   {
     id: 58,
@@ -630,7 +630,7 @@ const musics = [{
     artist: "Nação Zumbi",
     album: "Futura",
     music: "/assets/music/Futura/12 - Futura.mp3",
-    description: "teste1",
+    description: "",
   },
 
   {
@@ -641,7 +641,7 @@ const musics = [{
     artist: "Mundo Livre S/A",
     album: "Samba esquema noise",
     music: "/assets/music/SambaEsquema/01. Manguebit.mp3",
-    description: "teste1",
+    description: "",
   },
 
   {
@@ -652,7 +652,7 @@ const musics = [{
     artist: "Mundo Livre S/A",
     album: "Samba esquema noise",
     music: "/assets/music/SambaEsquema/02. A Bola do Jogo.mp3",
-    description: "teste1",
+    description: "",
   },
   {
     id: 61,
@@ -662,7 +662,7 @@ const musics = [{
     artist: "Mundo Livre S/A",
     album: "Samba esquema noise",
     music: "/assets/music/SambaEsquema/03. Livre Iniciativa.mp3",
-    description: "teste1",
+    description: "",
   },
   {
     id: 62,
@@ -672,7 +672,7 @@ const musics = [{
     artist: "Mundo Livre S/A",
     album: "Samba esquema noise",
     music: "/assets/music/SambaEsquema/04. Terra Escura.mp3",
-    description: "teste1",
+    description: "",
   },
   {
     id: 63,
@@ -682,7 +682,7 @@ const musics = [{
     artist: "Mundo Livre S/A",
     album: "Samba esquema noise",
     music: "/assets/music/SambaEsquema/05. Saldo de Aratú.mp3",
-    description: "teste1",
+    description: "",
   },
   {
     id: 64,
@@ -692,7 +692,7 @@ const musics = [{
     artist: "Mundo Livre S/A",
     album: "Samba esquema noise",
     music: "/assets/music/SambaEsquema/06. Uma Mulher com W... Maiúsculo.mp3",
-    description: "teste1",
+    description: "",
   },
   {
     id: 65,
@@ -702,7 +702,7 @@ const musics = [{
     artist: "Mundo Livre S/A",
     album: "Samba esquema noise",
     music: "/assets/music/SambaEsquema/07. Homero, o Junkie.mp3",
-    description: "teste1",
+    description: "",
   },
   {
     id: 66,
@@ -712,7 +712,7 @@ const musics = [{
     artist: "Mundo Livre S/A",
     album: "Samba esquema noise",
     music: "/assets/music/SambaEsquema/08. Rios (Smart Dugs), Pontes & Overdrives.mp3",
-    description: "teste1",
+    description: "",
   },
   {
     id: 67,
@@ -722,7 +722,7 @@ const musics = [{
     artist: "Mundo Livre S/A",
     album: "Samba esquema noise",
     music: "/assets/music/SambaEsquema/09. Musa da Ilha Grande.mp3",
-    description: "teste1",
+    description: "",
   },
   {
     id: 68,
@@ -732,7 +732,7 @@ const musics = [{
     artist: "Mundo Livre S/A",
     album: "Samba esquema noise",
     music: "/assets/music/SambaEsquema/10. Cidade Estuário.mp3",
-    description: "teste1",
+    description: "",
   },
   {
     id: 69,
@@ -742,7 +742,7 @@ const musics = [{
     artist: "Mundo Livre S/A",
     album: "Samba esquema noise",
     music: "/assets/music/SambaEsquema/11. O Rapaz do B... Preto.mp3",
-    description: "teste1",
+    description: "",
   },
   {
     id: 70,
@@ -752,7 +752,7 @@ const musics = [{
     artist: "Mundo Livre S/A",
     album: "Samba esquema noise",
     music: "/assets/music/SambaEsquema/12. Sob o Calçamento (se Espumar é Gente).mp3",
-    description: "teste1",
+    description: "",
   },
   {
     id: 71,
@@ -762,7 +762,7 @@ const musics = [{
     artist: "Chico Science & Nação Zumbi",
     album: "Afrociberdelia",
     music: "/assets/music/Afrociberdelia/01 - Mateus Enter.mp3",
-    description: "teste1",
+    description: "",
   },
   {
     id: 72,
@@ -772,7 +772,7 @@ const musics = [{
     artist: "Chico Science & Nação Zumbi",
     album: "Afrociberdelia",
     music: "/assets/music/Afrociberdelia/02 - O Cidadão do Mundo.mp3",
-    description: "teste1",
+    description: "",
   },
   {
     id: 73,
@@ -782,7 +782,7 @@ const musics = [{
     artist: "Chico Science & Nação Zumbi",
     album: "Afrociberdelia",
     music: "/assets/music/Afrociberdelia/03 - Etnia.mp3",
-    description: "teste1",
+    description: "",
   },
   {
     id: 74,
@@ -792,7 +792,7 @@ const musics = [{
     artist: "Chico Science & Nação Zumbi",
     album: "Afrociberdelia",
     music: "/assets/music/Afrociberdelia/04 - Quilombo Groove.mp3",
-    description: "teste1",
+    description: "",
   },
   {
     id: 75,
@@ -802,7 +802,7 @@ const musics = [{
     artist: "Chico Science, Nação Zumbi, Gilberto Gil e Marcelo D2",
     album: "Afrociberdelia",
     music: "/assets/music/Afrociberdelia/05 - Macô.mp3",
-    description: "teste1",
+    description: "",
   },
   {
     id: 76,
@@ -812,7 +812,7 @@ const musics = [{
     artist: "Chico Science & Nação Zumbi",
     album: "Afrociberdelia",
     music: "/assets/music/Afrociberdelia/06 - Um Passeio no Mundo Livre.mp3",
-    description: "teste1",
+    description: "",
   },
   {
     id: 77,
@@ -822,7 +822,7 @@ const musics = [{
     artist: "Chico Science, Nação Zumbi, Fred 04",
     album: "Afrociberdelia",
     music: "/assets/music/Afrociberdelia/07 - Samba do Lado.mp3",
-    description: "teste1",
+    description: "",
   },
   {
     id: 78,
@@ -832,7 +832,7 @@ const musics = [{
     artist: "Chico Science & Nação Zumbi",
     album: "Afrociberdelia",
     music: "/assets/music/Afrociberdelia/08 - Maracatu Atômico.mp3",
-    description: "teste1",
+    description: "",
   },
   {
     id: 79,
@@ -842,7 +842,7 @@ const musics = [{
     artist: "Chico Science & Nação Zumbi",
     album: "Afrociberdelia",
     music: "/assets/music/Afrociberdelia/09 - O Encontro De Isaac Asimov Com Santos Dumont No Céu.mp3",
-    description: "teste1",
+    description: "",
   },
   {
     id: 80,
@@ -852,7 +852,7 @@ const musics = [{
     artist: "Chico Science & Nação Zumbi",
     album: "Afrociberdelia",
     music: "/assets/music/Afrociberdelia/10 - Corpo de Lama.mp3",
-    description: "teste1",
+    description: "",
   },
   {
     id: 81,
@@ -862,7 +862,7 @@ const musics = [{
     artist: "Chico Science & Nação Zumbi",
     album: "Afrociberdelia",
     music: "/assets/music/Afrociberdelia/11 - Sobremesa.mp3",
-    description: "teste1",
+    description: "",
   },
   {
     id: 82,
@@ -872,7 +872,7 @@ const musics = [{
     artist: "Chico Science & Nação Zumbi",
     album: "Afrociberdelia",
     music: "/assets/music/Afrociberdelia/12 - Manguetown.mp3",
-    description: "teste1",
+    description: "",
   },
   {
     id: 83,
@@ -882,7 +882,7 @@ const musics = [{
     artist: "Chico Science & Nação Zumbi",
     album: "Afrociberdelia",
     music: "/assets/music/Afrociberdelia/13 - Um Satélite na Cabeca.mp3",
-    description: "teste1",
+    description: "",
   },
   {
     id: 84,
@@ -892,7 +892,7 @@ const musics = [{
     artist: "Chico Science & Nação Zumbi",
     album: "Afrociberdelia",
     music: "/assets/music/Afrociberdelia/14 - Baião Ambiental.mp3",
-    description: "teste1",
+    description: "",
   },
   {
     id: 85,
@@ -902,7 +902,7 @@ const musics = [{
     artist: "Chico Science & Nação Zumbi",
     album: "Afrociberdelia",
     music: "/assets/music/Afrociberdelia/15 - Sangue de Bairro.mp3",
-    description: "teste1",
+    description: "",
   },
   {
     id: 86,
@@ -912,7 +912,7 @@ const musics = [{
     artist: "Chico Science & Nação Zumbi",
     album: "Afrociberdelia",
     music: "/assets/music/Afrociberdelia/16 - Enquanto o Mundo Explode.mp3",
-    description: "teste1",
+    description: "",
   },
   {
     id: 87,
@@ -922,7 +922,7 @@ const musics = [{
     artist: "Chico Science & Nação Zumbi",
     album: "Afrociberdelia",
     music: "/assets/music/Afrociberdelia/17 - Interlude Zumbi.mp3",
-    description: "teste1",
+    description: "",
   },
   {
     id: 88,
@@ -932,7 +932,7 @@ const musics = [{
     artist: "Chico Science & Nação Zumbi",
     album: "Afrociberdelia",
     music: "/assets/music/Afrociberdelia/18 - Criança de Domingo.mp3",
-    description: "teste1",
+    description: "",
   },
   {
     id: 89,
@@ -942,7 +942,7 @@ const musics = [{
     artist: "Chico Science & Nação Zumbi",
     album: "Afrociberdelia",
     music: "/assets/music/Afrociberdelia/19 - Amor de Muito.mp3",
-    description: "teste1",
+    description: "",
   },
   {
     id: 90,
@@ -952,7 +952,7 @@ const musics = [{
     artist: "Chico Science & Nação Zumbi",
     album: "Afrociberdelia",
     music: "/assets/music/Afrociberdelia/20 - Samidarish.mp3",
-    description: "teste1",
+    description: "",
   },
 
 ];
