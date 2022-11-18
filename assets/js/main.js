@@ -275,7 +275,7 @@ const musics = [{
     artist: "Mombojó",
     album: "Nadadenovo",
     music: "/assets/music/Nadadenovo/01 Cabidela.mp3",
-    description: "",
+    description: "Em “Cabidela”, a banda abre com a mistura de sentimentos vindas de um fim de relacionamento, desde frustrações, sensação de solidão e tristeza, até a raiva e o desejo que “ele” se vá.",
   },
   {
     id: 25,
@@ -1121,7 +1121,7 @@ function listarMusicas() {
 }
 
 function pegaTrackAlbuns() {
-  if(id != null) {
+  if (id != null) {
     let atualiza_id = 0;
     musics.forEach((musics_list) => {
       if (musics_list.idalbum == id) {
