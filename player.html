@@ -2,143 +2,121 @@
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MusicBox</title>
-  
-    <!-- Icone da aba -->
-    <link rel="shortcut icon" href="./assets/img/favicon-senac/favicon.ico" type="image/x-icon" />
-  
-    <link rel="stylesheet" href="/assets/css/playlist_style.css" />
-    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
-  
-    <!-- Fontes -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-  
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="./assets/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
-  
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js%22%3E"></script>
-  
-    <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/dfbf29b648.js" crossorigin="anonymous"> </script>
-  </head>
 
-  <header>
-    <nav class="navbar navbar-dark fixed-top">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="https://site-geral-senacno-recnplay.netlify.app/" target="_blank">
-          <img class="logo" src="assets/img/header-logo.png" width="200px" alt=""/>
-        </a>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MusicBox</title>
+
+  <!-- Icone da aba -->
+  <link rel="shortcut icon" href="./assets/img/favicon-senac/favicon.ico" type="image/x-icon" />
+
+  <link rel="stylesheet" href="/assets/css/playlist_style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
+
+  <!-- Fontes -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+  <!-- Customized Bootstrap Stylesheet -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="./assets/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js%22%3E"></script>
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/dfbf29b648.js" crossorigin="anonymous"> </script>
+</head>
+
+<header>
+  <nav class="navbar navbar-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="https://site-geral-senacno-recnplay.netlify.app/" target="_blank">
+        <img class="logo" src="assets/img/header-logo.png" width="200px" alt="" />
+      </a>
+      <a href="index.html">
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
           aria-controls="offcanvasDarkNavbar">
-          <span class="navbar-toggler-icon"></span>
+          <svg class="filter-white-svg" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em"
+            width="1em" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M946.5 505L534.6 93.4a31.93 31.93 0 0 0-45.2 0L77.5 505c-12 12-18.8 28.3-18.8 45.3 0 35.3 28.7 64 64 64h43.4V908c0 17.7 14.3 32 32 32H448V716h112v224h265.9c17.7 0 32-14.3 32-32V614.3h43.4c17 0 33.3-6.7 45.3-18.8 24.9-25 24.9-65.5-.1-90.5z">
+            </path>
+          </svg>
         </button>
-        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
-          aria-labelledby="offcanvasDarkNavbarLabel">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
-              Menu
-            </h5>
-            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
-              aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body">
-            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#cx cx-1 secao-1">Início</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#cx cx-2 secao-1">Movimento Manguebeat</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#cx cx-3 secao-1">Sobre nós</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Senac no Rec’n’Play 2022 - Projetos</a>
-              </li>
-            </ul>
-          </div>
+      </a>
+      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+        aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
+            Home
+          </h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+            aria-label="Close"></button>
         </div>
       </div>
       <img class="barra-nav-rec" src="./assets/img/barra-rec.png" />
-    </nav>
-  </header>
+  </nav>
+</header>
 
-  <body>
-    <div class="conteudo">
-      <div class="top">
-        <a href="index.html">
-          <img src="/assets/img/MusicBox_Logo-Preta.png" alt="">
-        </a>
+<body>
+  <div class="conteudo">
+    <div class="top">
+      <a href="index.html">
+        <img src="/assets/img/MusicBox_Logo-Preta.png" alt="">
+      </a>
+    </div>
+    <div class="mid">
+      <div class="album_musicas">
+        <div class="track-album">Nome do Album</div>
+        <ol id="lista_musica"></ol>
       </div>
-      <div class="mid">
-        <div class="album_musicas">
-          <div class="track-album">Nome do Album</div>
-          <ol id="lista_musica"></ol>
-        </div>
 
-        <div class="player">
-          <div class="wrapper">
-            <div class="details">
-              <div class="track-name">Nome da música</div>
-              <div class="track-artist">Nome do Album</div>
-              <div class="track-art"></div>
-              <div class="track-text">Texto sobre a música</div>
+      <div class="player">
+        <div class="wrapper">
+          <div class="details">
+            <div class="track-name">Nome da música</div>
+            <div class="track-artist">Nome do Album</div>
+            <div class="track-art"></div>
+            <div class="track-text">Texto sobre a música</div>
+          </div>
+
+          <div class="slider_container">
+            <div class="current-time">00:00</div>
+            <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()" />
+            <div class="total-duration">00:00</div>
+          </div>
+
+          <div class="slider_container" id="volume">
+            <i class="fa fa-volume-down"></i>
+            <input type="range" min="1" max="100" value="99" class="volume_slider" onchange="setVolume()" />
+            <i class="fa fa-volume-up"></i>
+          </div>
+
+          <div class="buttons">
+            <div class="random-track" onclick="randomTrack()">
+              <i class="fas fa-random fa-2x" title="random"></i>
             </div>
-
-            <div class="slider_container">
-              <div class="current-time">00:00</div>
-              <input
-                type="range"
-                min="1"
-                max="100"
-                value="0"
-                class="seek_slider"
-                onchange="seekTo()"
-              />
-              <div class="total-duration">00:00</div>
+            <div class="prev-track" onclick="prevTrack()">
+              <i class="fa fa-step-backward fa-2x"></i>
             </div>
-
-            <div class="slider_container" id="volume">
-              <i class="fa fa-volume-down"></i>
-              <input
-                type="range"
-                min="1"
-                max="100"
-                value="99"
-                class="volume_slider"
-                onchange="setVolume()"
-              />
-              <i class="fa fa-volume-up"></i>
+            <div class="playpause-track" onclick="playpauseTrack()">
+              <i class="fa fa-play-circle fa-5x"></i>
             </div>
-
-            <div class="buttons">
-              <div class="random-track" onclick="randomTrack()">
-                <i class="fas fa-random fa-2x" title="random"></i>
-              </div>
-              <div class="prev-track" onclick="prevTrack()">
-                <i class="fa fa-step-backward fa-2x"></i>
-              </div>
-              <div class="playpause-track" onclick="playpauseTrack()">
-                <i class="fa fa-play-circle fa-5x"></i>
-              </div>
-              <div class="next-track" onclick="nextTrack()">
-                <i class="fa fa-step-forward fa-2x"></i>
-              </div>
-              <div class="repeat-track" onclick="repeatTrack()">
-                <i class="fa fa-repeat fa-2x" title="repeat"></i>
-              </div>
+            <div class="next-track" onclick="nextTrack()">
+              <i class="fa fa-step-forward fa-2x"></i>
+            </div>
+            <div class="repeat-track" onclick="repeatTrack()">
+              <i class="fa fa-repeat fa-2x" title="repeat"></i>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <script src="/assets/js/main.js"></script>
-  </body>
+  </div>
+  <script src="/assets/js/main.js"></script>
+</body>
+
 </html>

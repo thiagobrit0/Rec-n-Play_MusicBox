@@ -145,13 +145,18 @@ a {
   --font-secondary: "Poppins", sans-serif;
 }
 
-nav, body {
+nav,
+body {
   background-color: #000000 !important;
 }
 
 .logo {
   line-height: 0;
   max-height: 30px;
+}
+
+.filter-white-svg {
+  fill: #fff;
 }
 
 /* H's */
@@ -339,7 +344,7 @@ ol {
   align-items: center;
 }
 
-.track-album{
+.track-album {
   font-size: 26px;
   font-weight: 400;
   color: #b54cfc;

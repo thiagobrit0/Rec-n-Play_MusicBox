@@ -54,3 +54,9 @@ $('#prev').click(function () {
 $('#next').click(function () {
   moveToSelected('next');
 });
+
+$(".hover").mouseleave(
+  function () {
+    $(this).removeClass("hover");
+  }
+);

@@ -72,6 +72,9 @@ h2 {
 .card-content img {
   width: 100%;
 }
+.card-body {
+  margin-top: -3%
+}
 
   .parafrase{
     font-size: 18px;
@@ -80,6 +83,9 @@ h2 {
     
   }
 
+  .card-text{
+    margin-bottom: 2%;
+  }
 
 /*--------------------------------------------------------------
   # Sobre nós
