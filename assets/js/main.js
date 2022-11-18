@@ -1104,9 +1104,7 @@ function listarMusicas() {
       li.addEventListener("click", function handleClick() {
         track_index = music_list.id;
         loadTrack(track_index);
-        if (isPlaying) {
-          playTrack();
-        }
+        playTrack();
       });
 
       const nome = document.createElement("h3");
