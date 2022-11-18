@@ -173,7 +173,7 @@ const musics = [{
     artist: "Chico Science, Nação Zumbi, Jorge Ben Jor, Fred 04, Marcelo D2, Falcão",
     album: "C.S.N.Z",
     music: "/assets/music/CSNZ/01 Malungo.mp3",
-    description: "",
+    description: "Malungo é uma palavra que remete ao companheirismo, luta e homenagem a um dos seus, uma vez que o álbum foi lançado após a morte de Chico Science e mantém o teor eclético do movimento manguebeat.",
   },
 
   {
