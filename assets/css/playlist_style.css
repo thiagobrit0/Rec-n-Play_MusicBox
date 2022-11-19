@@ -484,7 +484,7 @@ ol {
   display: flex;
   align-items: center;
   color: #3c3c3c;
-  text-align: center;
+  text-align: justify;
   margin-left: 20px;
   margin-right: 20px;
 }
